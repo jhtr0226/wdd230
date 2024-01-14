@@ -1,0 +1,179 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Salsa&display=swap');
+*/
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Playfair+Display:ital,wght@1,500&family=Salsa&display=swap');
+
+:root {
+    --paragraphs-font: "Salsa", sans-serif;
+    --heading-font: "Playfair Display", sans-serif;
+    --test-font: "Kalam", "sans-serif";
+    --secondary-color: #427AA1;
+    --primary-color: #4B2E61;
+
+}
+
+
+/*Images*/
+#myPic {
+    margin-top: 25px;
+    width: 110px;
+    height: auto;
+    border-radius: 10px;
+    align-items: center;
+    margin-left: auto;
+}
+
+#flag {
+    width: 40px;
+    height: auto;
+    margin-bottom: -15px;
+}
+
+/*//////////////////////////////////////////////////////////*/
+
+body {
+    margin: 0;
+}
+
+main {
+    margin-top: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+
+}
+
+header {
+    color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    background: linear-gradient(to bottom, var(--primary-color), black);
+    font-family: var(--test-font);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: white;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+nav {
+    margin-top: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+nav p,
+nav a {
+    font-size: 1.2em;
+    color: white;
+    margin: 5px;
+    font-family: var(--heading-font);
+    padding: 2px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: var(--secondary-color);
+
+}
+
+footer {
+    font-size: 1.2em;
+    font-family: var(--parag raphs-font);
+    width: 550px;
+    max-width: 100%;
+    margin: 25px auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to top, var(--primary-color), black);
+    border-radius: 5px;
+}
+
+footer p {
+    font-family: var(--paragraphs-font);
+    color: white;
+    text-align: center;
+
+}
+
+.card {
+    border-radius: 5px;
+    width: 700px;
+    max-width: 70%;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+
+.card h3 {
+    background-color: var(--primary-color);
+    font-size: 1.5em;
+    font-family: var(--heading-font);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+
+.card p {
+    font-size: 1.2em;
+    font-family: var(--paragraphs-font);
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.7em;
+    font-family: var(--paragraphs-font);
+    margin-top: 55px;
+    text-align: center;
+    margin-bottom: -15px;
+}
+
+hr {
+    width: 70%;
+    margin: 20px auto;
+    margin-bottom: 15px;
+}
+
+
+/*list*/
+.my-list {
+    list-style: none;
+    counter-reset: my-counter;
+    font-family: var(--paragraphs-font);
+    font-size: 1.2em;
+}
+
+.my-list li {
+    counter-increment: my-counter;
+    margin-bottom: 10px;
+
+}
+
+.my-list li:before {
+    content: counter(my-counter, decimal-leading-zero) ": ";
+    color: #000;
+    margin-right: 5px;
+}
