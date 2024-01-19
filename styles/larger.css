@@ -25,7 +25,6 @@
 
     hr {
         grid-column: span 2;
-        /* Make hr span both columns */
     }
 
     nav {
