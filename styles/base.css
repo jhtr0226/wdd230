@@ -30,22 +30,18 @@
 
 /*//////////////////////////////////////////////////////////*/
 
-body {
-    margin: 0;
-}
+
 
 main {
-    margin-top: 10px;
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
     display: grid;
     gap: 10px;
-
+    grid-template-columns: 1fr;
 }
 
 header {
-    color: white;
-    max-width: 600px;
+    max-width: 100%;
     margin: 0 auto;
     padding-bottom: 30px;
     background: linear-gradient(to bottom, var(--primary-color), black);
@@ -53,7 +49,6 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    text-align: center;
 }
 
 h1 {
@@ -65,8 +60,7 @@ h1 {
 }
 
 nav {
-    margin-top: 0;
-    max-width: 600px;
+    max-width: 100%;
     margin: 0 auto;
     text-align: center;
     background-color: black;
@@ -96,7 +90,6 @@ nav a:hover {
 
 footer {
     font-size: 1.2em;
-    width: 550px;
     max-width: 100%;
     margin: 25px auto;
     padding: 30px;
@@ -116,8 +109,8 @@ footer p {
 
 .card {
     border-radius: 5px;
-    width: 700px;
-    max-width: 70%;
+    width: 100%;
+    max-width: 100%;
     border: 1px solid #000;
     margin: 0 auto;
 }
@@ -133,6 +126,7 @@ footer p {
     margin-top: 0;
     margin-bottom: 10px;
     padding: 15px;
+
 }
 
 
@@ -148,10 +142,12 @@ h2 {
     margin-top: 55px;
     text-align: center;
     margin-bottom: -15px;
+
 }
 
 hr {
-    width: 70%;
+    width: 100%;
+    max-width: 100%;
     margin: 20px auto;
     margin-bottom: 15px;
 }
