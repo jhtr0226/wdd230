@@ -33,7 +33,7 @@
 
 
 main {
-    max-width: 600px;
+    max-width: 750px;
     margin: 0 auto;
     display: grid;
     gap: 10px;
@@ -92,6 +92,7 @@ footer {
     font-size: 1.2em;
     max-width: 100%;
     margin: 25px auto;
+    height: auto;
     padding: 30px;
     display: flex;
     flex-direction: column;
