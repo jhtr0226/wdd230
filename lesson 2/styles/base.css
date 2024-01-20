@@ -8,27 +8,23 @@
     --third-color: ;
 }
 
-body {
-    margin: 0;
-}
 
 main {
     max-width: 750px;
     text-align: center;
     display: grid;
     gap: 10px;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 header {
     color: white;
-    text-align: center;
+    margin: 0 auto;
     background: linear-gradient(to top, var(--main-color), black);
     font-family: var(--h-fonts);
     max-width: 100%;
-    align-items: center;
+    text-align: center;
     font-size: 1.3em;
-    margin: 0 auto;
 }
 
 h2 {
@@ -84,6 +80,10 @@ h2 {
 }
 
 footer {
+    margin-top: 20px;
+    padding: 10px;
+    align-items: center;
+    max-width: 100%;
     font-family: var(--p-fonts);
     background: linear-gradient(to bottom, var(--main-color), black);
     color: white;
