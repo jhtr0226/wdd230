@@ -8,11 +8,13 @@
     --third-color: ;
 }
 
+body {
+    margin: 0;
+}
+
 
 main {
-    max-width: 750px;
     margin: 0 auto;
-    text-align: center;
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -54,26 +56,26 @@ h2 {
     padding: 15px;
 }
 
-.card p {
-    text-align: center;
-    font-family: var(--p-fonts);
-}
-
 .card {
+    text-align: center;
     border-radius: 5px;
-    width: 80%;
     max-width: 100%;
     margin: 0 auto;
     border: 1px solid #000;
     background: var(--second-color);
+    font-family: var(--p-fonts);
+}
 
+.card p {
+    padding: 10px;
+    font-size: 1.2em;
 }
 
 .card img {
-    margin-top: 25px;
+    margin-top: -20px;
     height: auto;
-    max-width: 100%;
-    align-items: center;
+    max-width: 90%;
+    border-radius: 10px;
 }
 
 #to-top {
@@ -82,13 +84,53 @@ h2 {
 
 footer {
     margin-top: 20px;
-    padding: 10px;
+    padding: 1rem;
     align-items: center;
-    max-width: 100%;
     font-family: var(--p-fonts);
     background: linear-gradient(to bottom, var(--main-color), black);
     color: white;
     text-align: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+
+
+
+@media screen and (max-width: 599px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 80%;
+        max-width: 100%;
+        grid-column: auto;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        max-width: 100%;
+        grid-column: auto;
+        margin: 0 auto;
+    }
+
+
+    .card:nth-child(3) {
+        grid-column: span 2;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
