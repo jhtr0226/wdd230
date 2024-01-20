@@ -5,7 +5,6 @@
     --p-fonts: "Noto Serif", sans-serif;
     --main-color: #2e29bb;
     --second-color: rgb(218, 195, 195);
-    /*--third-color: ;*/
 }
 
 body {
@@ -69,6 +68,7 @@ h2 {
 .card p {
     padding: 10px;
     font-size: 1.2em;
+    color: black;
 }
 
 .card img {
@@ -76,6 +76,16 @@ h2 {
     height: auto;
     max-width: 90%;
     border-radius: 10px;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.card a:hover {
+    text-decoration: underline;
+    color: var(--main-color);
 }
 
 #to-top {
