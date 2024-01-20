@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Noto+Serif:ital,wght@1,600&display=swap');
+
+:root {
+    --h-fonts: "Hind Madurai", sans-serif;
+    --p-fonts: "Noto Serif", sans-serif;
+    --main-color: #2e29bb;
+    --second-color: rgb(218, 195, 195);
+    --third-color: ;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    max-width: 750px;
+    text-align: center;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+}
+
+header {
+    color: white;
+    text-align: center;
+    background: linear-gradient(to top, var(--main-color), black);
+    font-family: var(--h-fonts);
+    max-width: 100%;
+    align-items: center;
+    font-size: 1.3em;
+    margin: 0 auto;
+}
+
+h2 {
+
+    font-family: var(--h-fonts);
+}
+
+header p {
+    margin-top: -25px;
+    padding-bottom: 20px;
+    font-size: 1.7em;
+    font-family: var(--h-fonts);
+}
+
+h2 {
+    background: linear-gradient(to bottom, var(--main-color), black);
+    font-size: 1.5em;
+    font-family: var(--h-fonts);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.card p {
+    text-align: center;
+    font-family: var(--p-fonts);
+    width: 95%;
+}
+
+.card {
+    border-radius: 5px;
+    width: 80%;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 1px solid #000;
+    background: var(--second-color);
+
+}
+
+.card img {
+    margin-top: 25px;
+    height: auto;
+    max-width: 100%;
+    align-items: center;
+}
+
+#to-top {
+    background: linear-gradient(to top, var(--main-color), black);
+}
+
+footer {
+    font-family: var(--p-fonts);
+    background: linear-gradient(to bottom, var(--main-color), black);
+    color: white;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
