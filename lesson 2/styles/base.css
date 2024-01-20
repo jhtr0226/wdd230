@@ -19,7 +19,8 @@ main {
 
 header {
     color: white;
-    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 20px;
     background: linear-gradient(to top, var(--main-color), black);
     font-family: var(--h-fonts);
     max-width: 100%;
@@ -55,7 +56,6 @@ h2 {
 .card p {
     text-align: center;
     font-family: var(--p-fonts);
-    width: 95%;
 }
 
 .card {
