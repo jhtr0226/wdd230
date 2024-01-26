@@ -59,19 +59,44 @@ h1 {
     margin-right: auto;
 }
 
-nav {
-    max-width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    background-color: black;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+#my-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--primary-color);
+
 }
 
-nav p,
-nav a {
+#my-button::before {
+    content: "☰";
+    color: white;
+}
+
+#my-button.open::before {
+    content: "🔺";
+    color: white;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    max-width: 100%;
+    background-color: black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    justify-content: center;
+    text-align: center;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li p,
+.navigation li a {
     font-size: 1.2em;
     color: white;
     margin: 5px;
@@ -80,12 +105,43 @@ nav a {
     text-decoration: none;
     display: flex;
     justify-content: center;
+    text-align: center;
+
 }
 
-nav a:hover {
-    text-decoration: underline;
-    color: var(--secondary-color);
+nav {
+    max-width: 100%;
+    margin: 0 auto;
+    background: black;
+    /*text-align: center;*/
+    /*background-color: black;*/
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
 
+.navigation li a:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black;
+
+}
+
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li p>a {
+    display: block;
+}
+
+.active::before {
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black;
+    content: "> ";
+
+}
+
+.active {
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black;
 }
 
 footer {
@@ -130,7 +186,6 @@ footer p {
 
 }
 
-
 .card p {
     font-size: 1.2em;
     font-family: var(--paragraphs-font);
@@ -151,6 +206,18 @@ hr {
     max-width: 100%;
     margin: 20px auto;
     margin-bottom: 15px;
+}
+
+#frames {
+    height: 400px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    /* Adjust the aspect ratio as needed, e.g., for a 4:3 ratio use padding-bottom: 75% */
+    border: 0;
+    max-width: 100%;
 }
 
 

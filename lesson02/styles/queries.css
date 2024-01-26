@@ -1,4 +1,4 @@
-/*@media screen and (max-width: 599px) {
+@media screen and (max-width: 599px) {
     main {
         grid-template-columns: 1fr;
     }
@@ -11,7 +11,7 @@
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 999px) {
+@media screen and (min-width: 600px) and (max-width: 899px) {
     main {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -30,13 +30,13 @@
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
     main {
         grid-template-columns: repeat(3, 1fr);
     }
-} 
+}
 
 
 
 
-Having it in a different file got me the query buggy*/
+/*Having it in a different file got me the query buggy*/
