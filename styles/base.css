@@ -43,7 +43,6 @@ main {
 header {
     max-width: 100%;
     margin: 0 auto;
-
     padding-bottom: 30px;
     background: linear-gradient(to bottom, var(--primary-color), black);
     font-family: var(--test-font);
