@@ -43,6 +43,7 @@ main {
 header {
     max-width: 100%;
     margin: 0 auto;
+
     padding-bottom: 30px;
     background: linear-gradient(to bottom, var(--primary-color), black);
     font-family: var(--test-font);
@@ -209,7 +210,6 @@ hr {
 iframe {
     width: 100%;
     height: 100%;
-    /* Adjust the aspect ratio as needed, e.g., for a 4:3 ratio use padding-bottom: 75% */
     border: 0;
     max-width: 100%;
 }
