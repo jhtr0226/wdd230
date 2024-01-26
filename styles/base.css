@@ -89,14 +89,11 @@ h1 {
     padding-bottom: 1px;
     justify-content: center;
     text-align: center;
-}
-
-.navigation li {
     display: none;
 }
 
-.navigation li p,
-.navigation li a {
+.navigation p,
+.navigation a {
     font-size: 1.2em;
     color: white;
     margin: 5px;
@@ -113,26 +110,23 @@ nav {
     max-width: 100%;
     margin: 0 auto;
     background: black;
-    /*text-align: center;*/
-    /*background-color: black;*/
+    text-align: center;
+    background-color: black;
     padding-top: 1px;
     padding-bottom: 1px;
 }
 
-.navigation li a:hover {
+.navigation a:hover {
     text-decoration: underline;
     text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black;
 
 }
 
-.open li {
+.navigation.open {
     display: block;
     width: 100%;
 }
 
-.open li p>a {
-    display: block;
-}
 
 .active::before {
     text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black;
