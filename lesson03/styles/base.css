@@ -8,7 +8,7 @@
     /*--test-font: "Kalam", "sans-serif";*/
     --primary-color: #30638E;
     --secondary-color: #000000;
-    --optional-color: #929487;
+    --optional-color: #6b6d65;
 
 }
 
@@ -234,7 +234,8 @@ hr {
 }
 
 .colors th {
-    background-color: #999;
+    background-color: #000000;
+    color: white;
 }
 
 .colors td {
@@ -263,8 +264,4 @@ hr {
 
 section p {
     font-family: var(--paragraphs-font);
-}
-
-th {
-    color: white;
 }
