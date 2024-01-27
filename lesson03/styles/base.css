@@ -240,6 +240,7 @@ hr {
 .colors td {
     width: 25%;
     height: 3em;
+    color: white;
 }
 
 .primary {
@@ -262,4 +263,8 @@ hr {
 
 section p {
     font-family: var(--paragraphs-font);
+}
+
+th {
+    color: white;
 }
