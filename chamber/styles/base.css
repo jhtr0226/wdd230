@@ -59,7 +59,7 @@ header p {
     top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #747a7a;
+    background-color: var(--optional-color);
     color: white;
     margin-top: -150px;
     padding: 10px 20px;
@@ -69,7 +69,6 @@ header p {
     font-family: var(--paragraphs-font);
     transition: all 0.5s;
     text-shadow: 0 0 5px white, 0 0 5px black, 0 0 5px white;
-    box-shadow: 5px -5px 10px white, -5px 5px 10px white
 }
 
 #my-other-button span {
