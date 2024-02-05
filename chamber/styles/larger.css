@@ -1,12 +1,19 @@
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 599px) {
     #hero-img {
-        width: 100%;
-        max-width: 100%;
         height: 600px;
+        align-items: center;
+        background-color: rgb(71, 72, 73);
     }
 
+    #hero-container {
+        max-width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
     .navigation a:hover {
-        background-color: #5995ed;
+        background-color: rgb(105, 106, 107);
         color: #ffffff;
     }
 
@@ -14,11 +21,9 @@
         display: flex;
         flex-direction: row;
         text-align: center;
-        margin-top: -60px;
         justify-content: space-around;
-        background: black;
+        background: rgb(71, 72, 73);
         padding: 0;
-        z-index: 2;
     }
 
     .navigation a {
@@ -36,14 +41,25 @@
 
     #my-other-button {
         position: absolute;
-        top: 40%;
-        left: 20%;
-        background-color: #4B2E61;
-        /* Adjust color as needed */
+        top: 50%;
+        left: 25%;
         color: white;
-        padding: 10px 20px;
+        padding: 20px 30px;
         border: none;
         border-radius: 5px;
         cursor: pointer;
     }
+
+    header p {
+        margin-bottom: 60px;
+    }
+
+    header {
+        margin-bottom: 0px;
+    }
+
+    /*#logo {}
+
+    h1 {}*/
+
 }

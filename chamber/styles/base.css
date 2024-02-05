@@ -4,7 +4,7 @@
     --paragraphs-font: "Roboto", sans-serif;
     --heading-font: "Playfair Display", sans-serif;
     /*--test-font: "Kalam", "sans-serif";*/
-    --primary-color: #30638E;
+    --primary-color: rgb(71, 72, 73);
     --secondary-color: #000000;
     --optional-color: #6b6d65;
 
@@ -12,16 +12,25 @@
 
 header {
     display: flex;
-    background: rgb(21, 153, 177);
+    background: var(--primary-color);
     margin-bottom: -5px;
+    color: white;
+}
 
+#logo {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
 }
 
 h1 {
     font-family: var(--heading-font);
     margin-bottom: -15px;
     margin-left: 15px;
-    margin-top: 10px;
+    margin-top: 30px;
 
 }
 
@@ -30,9 +39,6 @@ header p {
     font-size: 1.1em;
 }
 
-#hero-container {
-    position: relative;
-}
 
 #hero-img {
     width: 100%;
@@ -41,37 +47,77 @@ header p {
     z-index: -1;
 }
 
+#hero-container {
+    background-color: var(--primary-color);
+}
+
+/*---------------------*/
 #my-other-button {
     position: absolute;
-    top: 100%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #4B2E61;
+    background-color: #747a7a;
     color: white;
     margin-top: -150px;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: var(--paragraphs-font);
+    transition: all 0.5s;
+    text-shadow: 0 0 5px white, 0 0 5px black, 0 0 5px white;
+    box-shadow: 5px -5px 10px white, -5px 5px 10px white
 }
 
+#my-other-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#my-other-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#my-other-button:hover span {
+    padding-right: 25px;
+}
+
+#my-other-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/*------------------------*/
 #my-button {
+    margin-top: 20px;
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background: rgb(18, 146, 189);
+    background: #747a7a;
     height: 50px;
 }
 
 #my-button::before {
     content: "☰";
-    color: black;
+    color: white;
 }
 
 #my-button.open::before {
     content: "X";
-    color: black;
+    color: white;
 }
+
+/*------------------*/
+
 
 .navigation {
     margin-top: -5px;
@@ -79,7 +125,7 @@ header p {
     flex-direction: column;
     list-style: none;
     max-width: 100%;
-    background-color: var(--primary-color);
+    background: var(--primary-color);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding-top: 1px;
@@ -87,6 +133,7 @@ header p {
     justify-content: center;
     text-align: center;
     display: none;
+    font-family: var(--paragraphs-font);
 }
 
 .navigation p,
@@ -116,7 +163,6 @@ nav {
 .navigation a:hover {
     text-decoration: underline;
     text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black;
-
 }
 
 .navigation.open {
@@ -135,23 +181,48 @@ nav {
     text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black;
 }
 
-
+/*---------------*/
 
 
 main {
-    max-width: 80%;
-    display: block;
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.card {
+    border-radius: 5px;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    font-size: 1.5em;
+    font-family: var(--heading-font);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 15px;
+
 }
 
 
 
 footer {
-    background: var(--primary-color);
+    background: rgb(71, 72, 73);
     color: white;
     margin-top: 20px;
     padding: 1rem;
     align-items: center;
-    font-family: var(--paragraphs-font);
+    font-family: var(--paragraph-font);
     color: white;
     text-align: center;
     border-top-left-radius: 10px;
