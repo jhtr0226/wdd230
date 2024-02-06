@@ -2,7 +2,7 @@
     #hero-img {
         height: 600px;
         align-items: center;
-        background-color: rgb(71, 72, 73);
+
     }
 
     #hero-container {
@@ -13,7 +13,6 @@
 
 
     .navigation a:hover {
-        background-color: rgb(105, 106, 107);
         color: #ffffff;
     }
 
@@ -22,7 +21,6 @@
         flex-direction: row;
         text-align: center;
         justify-content: space-around;
-        background: rgb(71, 72, 73);
         padding: 0;
     }
 

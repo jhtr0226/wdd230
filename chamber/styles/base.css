@@ -10,9 +10,11 @@
 
 }
 
+/*-----upper-------*/
 header {
     display: flex;
-    background: var(--primary-color);
+    background: linear-gradient(to top, rgba(71, 72, 73, 1), rgba(0, 0, 0, 1));
+    ;
     margin-bottom: -5px;
     color: white;
 }
@@ -126,14 +128,14 @@ header p {
     flex-direction: column;
     list-style: none;
     max-width: 100%;
-    background: var(--primary-color);
+    background: linear-gradient(to bottom, rgba(71, 72, 73, 1), rgba(0, 0, 0, 1));
+    ;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding-top: 1px;
     padding-bottom: 1px;
     justify-content: center;
     text-align: center;
-    display: none;
     font-family: var(--paragraphs-font);
 }
 
@@ -149,6 +151,14 @@ header p {
     justify-content: center;
     text-align: center;
 
+}
+
+nav {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 .navigation a:hover {
@@ -239,7 +249,8 @@ main p {
 
 
 footer {
-    background: rgb(71, 72, 73);
+    background: linear-gradient(to bottom, rgba(71, 72, 73, 1), rgba(0, 0, 0, 1));
+    ;
     color: white;
     margin-top: 20px;
     padding: 1rem;
