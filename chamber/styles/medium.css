@@ -1,4 +1,5 @@
-@media screen and (min-width: 1201px) and (max-width: 4000px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+
     #hero-img {
         height: 600px;
         align-items: center;
@@ -10,7 +11,6 @@
         margin: 0 auto;
         text-align: center;
     }
-
 
     .navigation a:hover {
         background-color: rgb(105, 106, 107);
@@ -58,27 +58,25 @@
         margin-bottom: 0px;
     }
 
-    /*#logo {}
-
-    h1 {}*/
-
-    .one {
+    .one,
+    .three {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .three {
-        align-items: center;
-        grid-template-columns: repeat(4, 1fr);
-    }
 
     hr {
-
         grid-column: span 2;
     }
 
     .three h2 {
-        grid-column: span 4;
-        justify-items: center;
+        grid-column: span 2;
     }
+
+
+
+
+
+
+
 
 }
