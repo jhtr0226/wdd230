@@ -37,9 +37,7 @@
     </header>
 
     <div id="hero-container">
-        <div>
-            <img id="hero-img" src="images/hero_costa_rica_spring24.jpg" alt="Guadalupe Center">
-        </div>
+        <img id="hero-img" src="images/hero_costa_rica_spring24.jpg" alt="Guadalupe Center">
         <div>
             <button id="my-other-button"><span>JOIN US</span></button>
         </div>
@@ -118,6 +116,7 @@
 
     <footer>
         <p></p>
+        <!--
         <div class="social">
             <a href="#" target="_blank">
                 <img src="images/facebook.png" alt="fb icon">
@@ -131,12 +130,20 @@
             <a href="#" target="_blank">
                 <img src="images/linkedln.png" alt="linkedln icon">
             </a>
-        </div>
+        </div>-->
         <p id="lastModified"></p>
+
+        <label class="switch" id="mode">
+            <input type="checkbox" id="dark-mode-toggle">
+            <span class="slider round"></span>
+            <p id="mode-text">DARK MODE</p>
+        </label>
+
     </footer>
 
     <script src="scripts/burgermenu.js"></script>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/dark-mode.js"></script>
 
 </body>
 
