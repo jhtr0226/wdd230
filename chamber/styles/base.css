@@ -428,3 +428,12 @@ input:checked+.slider:before {
     right: .5rem;
 
 }
+
+
+.dark-mode .card-1,
+.dark-mode .welcome,
+.dark-mode .card-1,
+.dark-mode .mini-card-1,
+.dark-mode .mini-card-2 {
+    border: 1px solid rgb(175, 170, 170);
+}
