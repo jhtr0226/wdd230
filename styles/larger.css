@@ -131,3 +131,16 @@
     }
 
 }*/
+@media (max-width: 750px) {
+
+    .herolabel p {
+
+        padding: 5px;
+        font-size: small;
+    }
+
+    .herolabel {
+        left: 15px;
+        padding: 5px;
+    }
+}
