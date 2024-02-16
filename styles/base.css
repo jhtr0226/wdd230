@@ -236,11 +236,17 @@ iframe {
 
 .hero {
     position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .hero img {
     width: 100%;
     height: auto;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: block;
+    margin: 0 auto;
 }
 
 .herolabel {
