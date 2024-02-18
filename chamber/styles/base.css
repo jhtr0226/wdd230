@@ -124,7 +124,9 @@ header p {
 
 
 .navigation {
+    /*margin-top: -5px;*/
     margin-top: -5px;
+    /*new one*/
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -436,4 +438,22 @@ input:checked+.slider:before {
 .dark-mode .mini-card-1,
 .dark-mode .mini-card-2 {
     border: 1px solid rgb(175, 170, 170);
+}
+
+
+
+
+.hero {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: block;
+    margin: 0 auto;
 }

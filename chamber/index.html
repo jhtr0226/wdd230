@@ -19,17 +19,13 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="images/chepe.ico">
-
-
-
-
+    <link rel="icon" href="images/chepe.webp">
 </head>
 
 <body>
 
     <header>
-        <a href="index.html"><img id="logo" src="images/logo.png" alt="logo"></a>
+        <a href="index.html"><img id="logo" src="images/logo.webp" alt="logo"></a>
         <div>
             <h1>GuadaSells</h1>
             <p>Chamber of Commerce</p>
@@ -46,13 +42,25 @@
 
     </header>
 
+    <!--
     <div id="hero-container">
         <img id="hero-img" src="images/hero_costa_rica_spring24.jpg" alt="Guadalupe Center">
         <div>
             <button id="my-other-button"><span>JOIN US</span></button>
         </div>
+    </div>-->
 
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+            <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+            <img src="images/hero-large.webp" alt="table setting" width="1500" height="750">
+        </picture>
+        <div>
+            <button id="my-other-button"><span>JOIN US</span></button>
+        </div>
     </div>
+
     <div>
         <nav class="navigation">
             <p><a href="#" class="active">Home</a></p>
@@ -85,7 +93,9 @@
             </section>
             <section class="card-1">
                 <h2>Weather</h2>
-                <p>Weather: Sunny 60°F</p>
+                <p>Temperature: <span id="temperature">60</span>°F</p>
+                <p>Wind speed: <span id="wind-speed">5.1</span> mph</p>
+                <p>Wind Chill: <span id="wind-chill"></span></p>
             </section>
         </div>
 
@@ -108,7 +118,7 @@
                     <p>Website</p>
                 </section>
                 <section class="mini-card-1">
-                    <h3></h3>
+                    <h3>SuperCompro</h3>
                     <p>Company 3: Providing quality services since 2015.</p>
                     <p>info@example.com</p>
                     <p>+1 123 456 7890</p>
@@ -148,6 +158,7 @@
     </footer>
 
     <script src="scripts/burgermenu.js"></script>
+    <script src="scripts/wind-chill.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/dark-mode.js"></script>
 

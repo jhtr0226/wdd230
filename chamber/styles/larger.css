@@ -17,6 +17,8 @@
     }
 
     .navigation {
+        margin-top: 0px;
+        /*new onw*/
         display: flex;
         flex-direction: row;
         text-align: center;
