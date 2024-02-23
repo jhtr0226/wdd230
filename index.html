@@ -72,7 +72,7 @@
         <picture>
             <source srcset="images/hero-small.webp" media="(max-width: 500px)">
             <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
-            <img src="images/hero-medium.webp" alt="table setting" width="1500" height="750">
+            <img src="images/hero-larger.webp" alt="table setting" width="1500" height="750">
         </picture>
         <div class="herolabel">
             <p>Gilbert, Arizona Temple</p>
@@ -100,7 +100,9 @@
                 <li><a href="lesson05/bom.html">DOM Practice</a></li>
                 <li><a href="lesson03/images/landscape.webp">WebP</a> | <a
                         href="responsive-img/responsive-imgs.html">Responsive Img</a></li>
-                <li><a href="#"></a></li>
+                <li><a href="lesson07/lazyload.html">Lazy load Practice</a> | <a href="lesson07/bom/bom.html">BOM
+                        [Storage practice]</a>
+                </li>
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
@@ -111,7 +113,7 @@
             <h3>Information</h3>
             <p>San Jose, Costa Rica</p>
             <p>Temperature</p>
-            <p>visits</p>
+            <p class="visits-counter">Visits: <span id="visitCount">0</span></p>
         </section>
         <iframe title="ipis" id="frames"
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1964.8270347377957!2d-84.01621067570795!3d9.962712212981916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2scr!4v1706075309790!5m2!1sen!2scr"
@@ -122,6 +124,7 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/burgermenu.js"></script>
+    <script src="scripts/visit-counter.js"></script>
     <script src="scripts/getdates.js"></script>
 </body>
 
