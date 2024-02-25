@@ -50,89 +50,72 @@
         </div>
     </div>-->
 
-    <div class="hero">
-        <picture>
-            <source srcset="images/hero-small.webp" media="(max-width: 500px)">
-            <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
-            <img src="images/hero-large.webp" alt="table setting" width="1500" height="750">
-        </picture>
-        <div>
-            <button id="my-other-button"><span>JOIN US</span></button>
-        </div>
-    </div>
-
     <div>
         <nav class="navigation">
-            <p><a href="#" class="active">Home</a></p>
-            <p><a href="discover.html">Discover</a></p>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="#" class="active">Discover</a></p>
             <p><a href="#">Directory</a></p>
             <p><a href="#">JOIN!</a></p>
         </nav>
     </div>
     <button id="my-button"></button>
+    <h4>
+        <p id="message"></p>
+    </h4>
+    <h4 class="visits-counter">Visits: <span id="visitCount">0</span></h4>
+    <main class="main-discover"> <!--this is a funny class name-->
 
-    <main>
+        <hr class="hrv2">
 
-        <section class="welcome">
-            <h2>Welcoming</h2>
-            <p>Welcome to GuadaSells!</p>
-            <p>In here you will be able to find goods for you family!
+        <div class="information">
 
-            </p>
-        </section>
+            <section class="card-1-1">
+                <h2>About</h2>
+                <p>Guadalupe is a district<br> from Goicoechea<br> in San Jose, Costa Rica.<br>This big district is
+                    prepared to<br> bring you the best it can<br>offer you in services<br>such as banks, stores<br>and
+                    new houses<br>ready to be habited<br>
+                    habited. We welcome<br> you to our webiste where you<br>will be able to get yourself<br>a nice place
+                    to live in!</p>
 
-
-        <div class="one">
-            <hr>
-            <section class="card-1">
-                <h2>Current Events</h2>
-                <p>Event 1</p>
-                <p>Event 2</p>
-                <p>Event 3</p>
-                <p>Event 4</p>
             </section>
-            <section class="card-1">
-                <h2>Weather</h2>
-                <p>Temperature: <input type="number" id="temperature">°F</p>
-                <p>Wind speed: <input type="number" id="wind-speed"> mph</p>
-                <button id="calculate-wind-chill">Calculate wind-chill</button>
-                <p>Wind Chill: <span id="wind-chill"></span></p>
+
+            <section class="card-1-1">
+                <h2>Sunsets are NICE!</h2>
+
+                <img src="images/view-small.webp" alt="views" loading="lazy" width="1000" height="500">
+
+                <p>p element</p>
+            </section>
+
+            <section class="card-1-1">
+                <h2>Example</h2>
+                <p>p element</p>
             </section>
         </div>
 
-        <div class="two">
-            <section class="card-2 three">
-                <h2>Spot lights</h2>
 
-                <section class="mini-card-1">
-                    <h3>MONGE</h3>
-                    <p>Company 1: Providing quality services since 2005.</p>
-                    <p>info@example.com</p>
-                    <p>+1 123 456 7890</p>
-                    <p>Website</p>
-                </section>
-                <section class="mini-card-2">
-                    <h3>BCR</h3>
-                    <p>Company 2: Providing quality services since 2008.</p>
-                    <p>info@example.com</p>
-                    <p>+1 123 456 7890</p>
-                    <p>Website</p>
-                </section>
-                <section class="mini-card-1">
-                    <h3>SuperCompro</h3>
-                    <p>Company 3: Providing quality services since 2015.</p>
-                    <p>info@example.com</p>
-                    <p>+1 123 456 7890</p>
-                    <p>Website</p>
-                </section>
-                <section class="mini-card-2">
-                    <h3>gh</h3>
-                    <p>Company 4: Providing quality services since 2001.</p>
-                    <p>info@example.com</p>
-                    <p>+1 123 456 7890</p>
-                    <p>Website</p>
-                </section>
-            </section>
+
+        <div class="gallery">
+            <picture>
+                <source srcset="images/church-small.webp" media="(max-width: 1000px)">
+                <img src="images/church-medium.webp" alt="church" loading="lazy" width="1000" height="500">
+            </picture>
+            <picture>
+                <source srcset="images/grass-small.webp" media="(max-width: 1000px)">
+                <img src="images/grass-medium.webp" alt="grass" loading="lazy" width="1000" height="500">
+            </picture>
+            <picture>
+                <source srcset="images/holyday-small.webp" media="(max-width: 1000px)">
+                <img src="images/holyday-medium.webp" alt="holyday" loading="lazy" width="1000" height="500">
+            </picture>
+            <picture>
+                <source srcset="images/kiosko-small.webp" media="(max-width: 1000px)">
+                <img src="images/kiosko-medium.webp" alt="kiosko" loading="lazy" width="1000" height="500">
+            </picture>
+            <picture class="space">
+                <source srcset="images/park-small.webp" media="(max-width: 1000px)">
+                <img src="images/park-medium.webp" alt="park" loading="lazy" width="1000" height="500">
+            </picture>
         </div>
     </main>
 
@@ -159,7 +142,8 @@
     </footer>
 
     <script src="scripts/burgermenu.js"></script>
-    <script src="scripts/wind-chill.js"></script>
+    <script src="scripts/visit-counter.js"></script>
+    <!--<script src="scripts/wind-chill.js"></script>-->
     <script src="scripts/getdates.js"></script>
     <script src="scripts/dark-mode.js"></script>
 
