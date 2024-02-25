@@ -17,7 +17,12 @@ if (!lastVisitDate) {
     }
 }
 
-document.getElementById("visitCount").textContent = visitCount;
-visitCount++;
+
+visitCount++;/*
 localStorage.setItem("visitCount", visitCount);
 localStorage.setItem("lastVisitDate", currentDate);
+document.getElementById("visitCount").textContent = visitCount;*/
+localStorage.setItem('lastVisitDate', currentDate.toString());
+localStorage.setItem('visitCount', visitCount.toString());
+
+document.querySelector('.visits').textContent = visitCount;
