@@ -10,3 +10,11 @@ modeButton.addEventListener("change", () => {
     localStorage.setItem("darkMode", darkModeToggle.checked);
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const isDarkMode = localStorage.getItem("darkMode") === "true";
+    if (isDarkMode) {
+        body.classList.add("dark-mode");
+        main.classList.add("dark-mode");
+        darkModeToggle.checked = true;
+    }
+});

@@ -14,15 +14,11 @@ function renderCalendar() {
     currentMonthElem.textContent = new Date(year, month).toLocaleString('default', { month: 'long', year: 'numeric' });
 
     daysContainer.innerHTML = '';
-
-    // Add empty cells for days before the first day of the month
     for (let i = 0; i < firstDayOfMonth; i++) {
         const emptyCell = document.createElement('div');
         emptyCell.classList.add('day');
         daysContainer.appendChild(emptyCell);
     }
-
-    // Add days of the month
     for (let day = 1; day <= daysInMonth; day++) {
         const dayElem = document.createElement('div');
         dayElem.classList.add('day');
@@ -41,5 +37,5 @@ nextMonthBtn.addEventListener('click', () => {
     renderCalendar();
 });
 
-// Initial rendering
+
 renderCalendar();

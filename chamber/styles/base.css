@@ -505,7 +505,25 @@ h4 {
     border-top-right-radius: 5px;
     margin: 0 auto;
     padding-top: 50px;
+}
 
+.gallery figure {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+}
+
+.gallery figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    font-family: var(--heading-font);
+    transition: opacity 0.3s ease;
 }
 
 picture {
@@ -551,13 +569,12 @@ picture {
     margin-bottom: 35px;
 }
 
-
-
 .calendar {
     width: 300px;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
+    margin: 0 auto;
 }
 
 .header {
@@ -577,4 +594,26 @@ picture {
     padding: 5px;
     border: 1px solid #eee;
     text-align: center;
+}
+
+
+
+.here-link {
+    color: #000;
+    text-decoration: none;
+}
+
+.here-link:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.dark-mode .here-link {
+    color: white;
+    text-decoration: none;
+}
+
+.dark-mode .here-link:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black;
 }
