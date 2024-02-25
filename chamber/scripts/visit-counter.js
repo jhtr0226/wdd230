@@ -28,5 +28,5 @@ localStorage.setItem('visitCount', visitCount.toString());
 
 const visitCountElement = document.querySelector('.visits-counter');
 if (visitCountElement) {
-    visitCountElement.textContent = visitCount;
+    visitCountElement.textContent = `Visits: visitCount`;
 }
