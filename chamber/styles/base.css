@@ -550,3 +550,31 @@ picture {
     margin-top: -20px;
     margin-bottom: 35px;
 }
+
+
+
+.calendar {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day {
+    padding: 5px;
+    border: 1px solid #eee;
+    text-align: center;
+}
