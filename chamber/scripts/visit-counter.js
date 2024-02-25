@@ -1,12 +1,16 @@
-const currentDate = new Date();
+const todaystDate = new Date();
+
 const lastVisitDate = localStorage.getItem('lastVisitDate');
+
 let visitCount = parseInt(localStorage.getItem('visitCount')) || 0;
 
 if (!lastVisitDate) {
     document.getElementById('message').textContent = 'Welcome! Let us know if you have any questions.';
 } else {
     const lastVisit = new Date(lastVisitDate);
-    const timeDifference = currentDate - lastVisit;
+
+    const timeDifference = todaystDate - lastVisit;
+
     const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
 
     if (daysDifference === 0) {
@@ -17,12 +21,12 @@ if (!lastVisitDate) {
     }
 }
 
+visitCount++;
 
-visitCount++;/*
-localStorage.setItem("visitCount", visitCount);
-localStorage.setItem("lastVisitDate", currentDate);
-document.getElementById("visitCount").textContent = visitCount;*/
-localStorage.setItem('lastVisitDate', currentDate.toString());
+localStorage.setItem('lastVisitDate', todaystDate.toString());
 localStorage.setItem('visitCount', visitCount.toString());
 
-document.querySelector('.visits').textContent = visitCount;
+const visitCountElement = document.querySelector('.visits-counter');
+if (visitCountElement) {
+    visitCountElement.textContent = visitCount;
+}
