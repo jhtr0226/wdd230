@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const firstP = document.querySelector("footer p:first-of-type");
     firstP.innerHTML = `&copy ${year} 
     Johann Tellez Rodriguez 
-    Costa Rica <img id="flag" src = "images/costa-rica.png" alt="costarican Flag">`;
+    Costa Rica <img id="flag" src = "images/costa-rica.webp" alt="costarican Flag">`;
 
     const lastModifiedDate = document.lastModified;
     const secondP = document.getElementById("lastModified");
