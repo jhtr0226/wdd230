@@ -1,0 +1,36 @@
+table {
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+    width: 45%;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+caption {
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+thead th:first-child {
+    background-color: black;
+}
+
+thead th:not(:first-child):nth-last-child(-n+3) {
+    background-color: rgb(48, 38, 38);
+    color: white;
+}
+
+p {
+    text-align: center;
+}
