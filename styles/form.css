@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Playfair+Display:ital,wght@1,500&family=Salsa&display=swap');
+
+
+:root {
+    --paragraphs-font: "Salsa", sans-serif;
+    --heading-font: "Playfair Display", sans-serif;
+    --test-font: "Kalam", "sans-serif";
+    --secondary-color: #427AA1;
+    --primary-color: #4B2E61;
+
+}
+
+main h2 {
+    font-family: var(--paragraphs-font);
+    font-size: 2em;
+    text-align: center;
+}
+
+form {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wf1 label {
+    padding: 15px;
+    display: block;
+    font-size: 1em;
+    font-family: var(--paragraphs-font);
+    margin: 0 auto;
+}
+
+.wf1 fieldset {
+    border-radius: 5px;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="password"],
+.wf1 input[type="email"] {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+
+}
+
+
+.wf1 input[type="submit"] {
+    margin: 1rem 2% 2rem 2%;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 90%;
+    max-width: 400px;
+}
+
+.wf1 input:required {
+    border-bottom: solid 6px red;
+}
+
+.wf1 input:required:valid {
+    border-bottom: solid 6px green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#myPic {
+    margin-top: 25px;
+    width: 110px;
+    height: auto;
+    border-radius: 10px;
+    align-items: center;
+    margin-left: auto;
+}
+
+#flag {
+    width: 40px;
+    height: auto;
+    margin-bottom: -15px;
+}
+
+
+main {
+    max-width: 750px;
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+}
+
+header {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    background: linear-gradient(to bottom, var(--primary-color), black);
+    font-family: var(--test-font);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: white;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+#my-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--primary-color);
+
+}
+
+#my-button::before {
+    content: "☰";
+    color: white;
+}
+
+#my-button.open::before {
+    content: "🔺";
+    color: white;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    max-width: 100%;
+    background-color: black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    justify-content: center;
+    text-align: center;
+    display: none;
+}
+
+.navigation p,
+.navigation a {
+    font-size: 1.2em;
+    color: white;
+    margin: 5px;
+    font-family: var(--heading-font);
+    padding: 2px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+nav {
+    max-width: 100%;
+    margin: 0 auto;
+    background: black;
+    text-align: center;
+    background-color: black;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black;
+
+}
+
+.navigation.open {
+    display: block;
+    width: 100%;
+}
+
+
+.active::before {
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black;
+    content: "> ";
+
+}
+
+.active {
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black;
+}
+
+footer {
+    font-size: 1.2em;
+    max-width: 100%;
+    margin-top: 25px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to top, var(--primary-color), black);
+    border-radius: 5px;
+}
+
+footer p {
+    font-family: var(--paragraphs-font);
+    color: white;
+    text-align: center;
+
+}
