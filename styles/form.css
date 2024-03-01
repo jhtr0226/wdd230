@@ -16,11 +16,7 @@ main h2 {
     text-align: center;
 }
 
-form {
-    max-width: 85%;
-    width: 100%;
-    margin: 0 auto;
-}
+
 
 .wf1 label {
     padding: 15px;
@@ -32,6 +28,9 @@ form {
 
 .wf1 fieldset {
     border-radius: 5px;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 400px;
 }
 
 .wf1 input[type="text"],
@@ -43,7 +42,7 @@ form {
     border-radius: 6px;
     padding: .75rem;
     color: #555;
-    width: 80%;
+    width: 90%;
     max-width: 400px;
     appearance: none;
     text-align: center;
@@ -62,6 +61,7 @@ form {
 
 
 .wf1 input[type="submit"] {
+    display: block;
     margin: 1rem auto;
     border-radius: 6px;
     padding: .8rem;
@@ -70,11 +70,11 @@ form {
 }
 
 .wf1 input:required {
-    border-right: solid 6px red;
+    border-left: solid 6px red;
 }
 
 .wf1 input:required:valid {
-    border-right: solid 6px green;
+    border-left: solid 6px green;
 }
 
 
