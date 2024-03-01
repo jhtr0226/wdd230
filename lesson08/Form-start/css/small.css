@@ -118,11 +118,6 @@ main {
 
 }
 
-.wf1 input[type="radio"],
-.wf1 input[type="checkbox"] {
-    margin-right: 6px;
-}
-
 .wf1 input[type="submit"] {
     margin: 1rem 2% 2rem 2%;
     border-radius: 6px;

@@ -38,17 +38,18 @@
     </nav>
     <main>
 
-        <h2>Form Rating</h2>
+        <h2>Rating Form </h2>
         <form method="get" action="record.html" class="wf1">
             <fieldset>
                 <label>Username*<input type="text" id="username" name="username" required></label>
 
 
                 <label>Password*
-                    <input type="text" id="password" name="password" pattern="[a-zA-Z -]{6,}"
+                    <input type="password" id="password" name="password" pattern="[a-zA-Z -]{6,}"
                         placeholder="At least six characters long. No numbers." required></label>
                 <label>Re-enter Your Password*
-                    <input type="text" id="password2" name="password2" required></label>
+                    <input type="password" id="password2" name="password2" required></label>
+                <p id="formmessage" style="visibility: hidden; color: red;"></p> <!-- Add this line -->
 
 
                 <label for="email">Email:
@@ -56,18 +57,24 @@
                         title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
 
 
-
-                <label for="r">Page Rating</label>
-                <div id="rangevalue">0</div>
-                <input type="range" id="r" name="r" min="0" max="5" value="0" step="1" list="rangevalues">
-                <datalist id="rangevalues">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </datalist>
+                <label>Page Rating
+                    <div id="rangevalue">0</div>
+                    <input type="range" id="rating" name="rating" min="0" max="10" value="0" step="1"
+                        list="rangevalues">
+                    <datalist id="rangevalues">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+                </label>
 
 
 
@@ -82,6 +89,7 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/burgermenu.js"></script>
+    <script src="scripts/password.js"></script>
     <script src="scripts/rating.js"></script>
     <script src="scripts/getdates.js"></script>
 </body>

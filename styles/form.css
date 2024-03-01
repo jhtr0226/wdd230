@@ -5,8 +5,8 @@
     --paragraphs-font: "Salsa", sans-serif;
     --heading-font: "Playfair Display", sans-serif;
     --test-font: "Kalam", "sans-serif";
-    --secondary-color: #427AA1;
-    --primary-color: #4B2E61;
+    --secondary-color: #eee;
+    --primary-color: #999;
 
 }
 
@@ -17,7 +17,7 @@ main h2 {
 }
 
 form {
-    max-width: 90%;
+    max-width: 85%;
     width: 100%;
     margin: 0 auto;
 }
@@ -27,7 +27,7 @@ form {
     display: block;
     font-size: 1em;
     font-family: var(--paragraphs-font);
-    margin: 0 auto;
+
 }
 
 .wf1 fieldset {
@@ -37,33 +37,44 @@ form {
 .wf1 input[type="text"],
 .wf1 input[type="password"],
 .wf1 input[type="email"] {
-    background-color: #eee;
+    background-color: var(--secondary-color);
     display: block;
-    border: solid 1px #999;
+    border: solid 1px var(--primary-color);
     border-radius: 6px;
     padding: .75rem;
     color: #555;
-    width: 100%;
+    width: 80%;
     max-width: 400px;
     appearance: none;
+    text-align: center;
+    margin-bottom: 15px;
 
+}
+
+.wf1 input[type="range"] {
+    display: block;
+}
+
+#rangevalue {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
 .wf1 input[type="submit"] {
-    margin: 1rem 2% 2rem 2%;
+    margin: 1rem auto;
     border-radius: 6px;
     padding: .8rem;
-    width: 90%;
+    width: 70%;
     max-width: 400px;
 }
 
 .wf1 input:required {
-    border-bottom: solid 6px red;
+    border-right: solid 6px red;
 }
 
 .wf1 input:required:valid {
-    border-bottom: solid 6px green;
+    border-right: solid 6px green;
 }
 
 
@@ -112,7 +123,7 @@ header {
     max-width: 100%;
     margin: 0 auto;
     padding-bottom: 30px;
-    background: linear-gradient(to bottom, var(--primary-color), black);
+    background: linear-gradient(to bottom, #4B2E61, black);
     font-family: var(--test-font);
     display: flex;
     flex-direction: row;
@@ -131,7 +142,7 @@ h1 {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background: var(--primary-color);
+    background: #4B2E61;
 
 }
 
@@ -214,7 +225,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(to top, var(--primary-color), black);
+    background: linear-gradient(to top, #4B2E61, black);
     border-radius: 5px;
 }
 
