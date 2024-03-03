@@ -625,8 +625,13 @@ picture {
 
 /*Chamber join part*/
 
+.the-form {
+    margin: 0 auto;
+    width: 100%;
+}
+
 .wf2 label {
-    padding: 15px;
+    padding: 10px;
     display: block;
     font-size: 1em;
     font-family: var(--paragraphs-font);
@@ -641,10 +646,9 @@ picture {
 
 .wf2 fieldset {
     border-radius: 5px;
-    margin: 0 auto;
+    margin: 2rem auto;
     width: 70%;
-    max-width: 400px;
-    margin-bottom: 20px;
+
 }
 
 .wf2 input[type="text"],
@@ -658,9 +662,8 @@ picture {
     width: 90%;
     max-width: 400px;
     appearance: none;
-    text-align: center;
     margin-bottom: 15px;
-
+    margin: 0 auto;
 }
 
 .dark-mode .wf2 input[type="text"],
@@ -719,16 +722,18 @@ picture {
 /*table*/
 
 table {
-    margin: 0 auto;
-    text-align: center;
     border-collapse: collapse;
+    width: 80%;
+    margin: 50px auto;
+    padding: 10px 10px;
 }
 
-th,
 td {
-    padding: 10px;
     border: 1px solid black;
+    margin: 0 auto;
+    padding: 5px;
 }
+
 
 .dark-mode th,
 .dark-mode td {
@@ -740,7 +745,7 @@ caption {
     background-color: #f2f2f2;
     color: black;
     padding: 10px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border: 1px solid black;
 }
 
@@ -761,7 +766,10 @@ tbody tr:nth-child(odd) {
 thead th {
     background-color: white;
     color: black;
+    padding: 5px;
+    border: 1px solid black;
 }
+
 
 .dark-mode thead th {
     background-color: black;
@@ -773,6 +781,14 @@ thead th {
     background-color: black;
 }
 
+tbody th {
+    font-weight: 200;
+    border: 1px solid black;
+    font-size: small;
+    padding: 10px;
+
+}
+
 table p {
     text-align: center;
 }
@@ -781,11 +797,8 @@ h2 {
     text-align: center;
 }
 
-.main-join {
-    max-width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 20px;
-    display: grid;
-    gap: 15px;
+
+th {
+    font-weight: 200;
+    font-size: small;
 }

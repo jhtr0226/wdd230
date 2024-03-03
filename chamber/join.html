@@ -44,7 +44,7 @@
     <div>
         <nav class="navigation">
             <p><a href="index.html">Home</a></p>
-            <p><a href="#">Discover</a></p>
+            <p><a href="discover.html">Discover</a></p>
             <p><a href="#">Directory</a></p>
             <p><a href="#" class="active">JOIN!</a></p>
         </nav>
@@ -53,9 +53,9 @@
     <h2>Join The Chamber</h2>
 
 
-    <main class="main-join">
+    <main class="main-discover">
 
-        <hr>
+        <hr class="hrv2">
 
         <div class="the-form">
             <form method="get" action="thankyou.html" class="wf2">
@@ -70,8 +70,9 @@
                 </fieldset>
                 <fieldset>
                     <legend>Business Information</legend>
-                    <label>Business Name<input type="text" name="title" id="title" pattern="[a-zA-Z\- ]{7,}"
-                            required></label>
+                    <label>Business Name<input type="text" name="bn" id="bn" required></label>
+                    <label>My Position in the Business <input type="text" name="title" id="title"
+                            pattern="[A-Za-z- ]{7,}" placeholder="Marketing Manager"></label>
                     <label>Business Description<textarea name="bd" id="bd" rows="5"
                             placeholder="Your business description goes here!"></textarea></label>
                 </fieldset>
@@ -98,7 +99,6 @@
                 <caption>
                     Benefits
                 </caption>
-
                 <thead>
                     <tr>
                         <th scope="col"></th>
