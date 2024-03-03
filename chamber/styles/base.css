@@ -803,20 +803,42 @@ th {
     font-size: small;
 }
 
+.record {
+    margin: 0 auto;
+    margin-bottom: 300px;
+    margin-top: 200px;
+}
 
 h4 {
     font-size: 2em;
     font-family: var(--heading-font);
+    color: black;
+}
+
+.dark-mode h4 {
+    color: white;
     text-shadow: 0 0 5px white, 0 0 5px black, 0 0 5px white;
 }
+
 
 .record p,
 .record a {
     font-size: 1em;
     font-family: var(--paragraphs-font);
-    color: white;
+    color: black;
 }
 
 .record a:hover {
+    color: blue;
+}
+
+.dark-mode .record p,
+.dark-mode .record a {
+    font-size: 1em;
+    font-family: var(--paragraphs-font);
+    color: white;
+}
+
+.dark-mode .record a:hover {
     text-shadow: 0 0 5px white, 0 0 5px black, 0 0 5px white;
 }
