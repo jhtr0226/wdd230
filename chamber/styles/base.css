@@ -802,3 +802,21 @@ th {
     font-weight: 200;
     font-size: small;
 }
+
+
+h4 {
+    font-size: 2em;
+    font-family: var(--heading-font);
+    text-shadow: 0 0 5px white, 0 0 5px black, 0 0 5px white;
+}
+
+.record p,
+.record a {
+    font-size: 1em;
+    font-family: var(--paragraphs-font);
+    color: white;
+}
+
+.record a:hover {
+    text-shadow: 0 0 5px white, 0 0 5px black, 0 0 5px white;
+}
