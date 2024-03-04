@@ -715,16 +715,13 @@ picture {
 }
 
 
-
-
-
-
 /*table*/
 
 table {
     border-collapse: collapse;
     width: 100%;
     max-width: 600px;
+    margin: 0;
     margin-left: -10px;
 }
 
