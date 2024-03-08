@@ -8,8 +8,8 @@
                     "title": "Grail"
                 },
                 {
-                    "url": "lesson01/media-query.html",
-                    "title": "Media Query"
+                    "url": "https://codepen.io/jhtr0226/pen/oNVLdJv",
+                    "title": "JS Pen"
                 }
             ]
         },
@@ -17,7 +17,7 @@
             "lesson": "02",
             "links": [
                 {
-                    "url": "lesson02/mediaquery.html",
+                    "url": "lesson01/media-query.html",
                     "title": "Media Queries"
                 },
                 {
