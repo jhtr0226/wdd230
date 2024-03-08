@@ -24,7 +24,7 @@ function displayLinks(weeks) {
             const linkListNum = document.createElement('li');
             const linkA = document.createElement('a');
 
-            linkA.href = baseURL + link.url; // Use link.url instead of linkURL
+            linkA.href = baseURL + link.url;
             linkA.textContent = link.title;
 
             linkListNum.appendChild(linkA);
@@ -35,11 +35,11 @@ function displayLinks(weeks) {
                 listOfLinks.appendChild(separator);
             }
 
-            linkIndex++; // Correct the variable name to linkIndex
+            linkIndex++;
         });
 
-        weekListNum.appendChild(listOfLinks); // Append listOfLinks to weekListNum
-        linksList.appendChild(weekListNum); // Append weekListNum to linksList
+        weekListNum.appendChild(listOfLinks);
+        linksList.appendChild(weekListNum);
     });
 }
 getLinks();
