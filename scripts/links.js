@@ -1,52 +1,37 @@
 const baseURL = "https://jhtr0226.github.io/wdd230/";
 const linksURL = "https://jhtr0226.github.io/wdd230/data/links.json";
 
+
 async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    displayLinks(data.lessons);
+    console.log(data);
+    displayLinks(data);
 }
-getLinks();
 
 
 function displayLinks(weeks) {
-    const linksList = document.querySelector('.my-list');
+    const activitiesList = document.querySelector('.numbered-list');
+    activitiesList.innerHTML = '';
 
     weeks.forEach(week => {
-        const WeekNum = week.lesson;
-        const links = week.links;
+        const { lesson, links } = week;
+        const weekListItem = document.createElement('li');
+        weekListItem.innerHTML = `<strong>Lesson ${lesson}:</strong>`;
 
-        const weekListNum = document.createElement('li');
-        weekListNum.textContent = { WeekNum };
-        linksList.appendChild(weekListNum);
-
-        const listOfLinks = document.createElement('ul');
-        let linkIndex = 0;
-
-        links.forEach((link) => {
-            const linkListNum = document.createElement('li');
-            const linkA = document.createElement('a');
-
-            linkA.href = baseURL + linkURL;
-            linkA.textContent = link.title;
-
-
-            linkListNum.appendChild(linkA);
-            listOfLinks.appendChild(linkListNum);
-
-            /*linksList.appendChild(weekListNum);
-            linksList.appendChild(listOfLinks);
-*/
-            if (linkIndex < links.length - 1) {
-                const separator = document.createTextNode(' | ');
-                listOfLinks.appendChild(separator);
-            }
-            LinkIndex++;
+        const linksList = document.createElement('ul');
+        links.forEach(link => {
+            const linkListItem = document.createElement('li');
+            const anchor = document.createElement('a');
+            anchor.href = link.url.startsWith('http') ? link.url : baseURL + link.url;
+            anchor.textContent = link.title;
+            linkListItem.appendChild(anchor);
+            linksList.appendChild(linkListItem);
         });
 
-        linksList.appendChild(listOfLinks);
+        weekListItem.appendChild(linksList);
+        activitiesList.appendChild(weekListItem);
     });
-
-
 }
 
+getLinks();
