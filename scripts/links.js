@@ -7,15 +7,15 @@ async function getLinks() {
     displayLinks(data);
 }
 
-function displayLinks(weeks) {
+function displayLinks(lessons) {
     const linksList = document.querySelector('.my-list');
 
-    weeks.forEach(week => {
-        const weekNum = week.lesson;
-        const links = week.links;
+    lessons.forEach(lesson => {
+        const lessonNum = lesson.lesson;
+        const links = lesson.links;
 
-        const weekListNum = document.createElement('li');
-        weekListNum.textContent = weekNum + ":";
+        const lessonListNum = document.createElement('li');
+        lessonListNum.textContent = lessonNum + ":";
 
         const listOfLinks = document.createElement('ul');
 
@@ -36,8 +36,8 @@ function displayLinks(weeks) {
 
         });
 
-        weekListNum.appendChild(listOfLinks);
-        linksList.appendChild(weekListNum);
+        lessonListNum.appendChild(listOfLinks);
+        linksList.appendChild(lessonListNum);
     });
 }
 getLinks();
