@@ -1,0 +1,35 @@
+{
+    "wardInformation": {
+        "familyName": "Tellez",
+        "moveInDate": "2024-03-7",
+        "numberOfPeople": 5,
+        "visitedByBishopric": false,
+        "familyMembers": [
+            {
+                "name": "Francisco Tellez",
+                "gender": "Male",
+                "birthdate": "1964-06-05"
+            },
+            {
+                "name": "Mary Rodriguez",
+                "gender": "Female",
+                "birthdate": "1977-11-17"
+            },
+            {
+                "name": "Johann Tellez",
+                "gender": "Male",
+                "birthdate": "2001-02-26"
+            },
+            {
+                "name": "Massy Tellez",
+                "gender": "Female",
+                "birthdate": "2002-05-11"
+            },
+            {
+                "name": "Ambar Tellez",
+                "gender": "Female",
+                "birthdate": "2017-05-31"
+            }
+        ]
+    }
+}
