@@ -15,12 +15,11 @@ function displayLinks(weeks) {
         const links = week.links;
 
         const weekListNum = document.createElement('li');
-        weekListNum.textContent = weekNum;
+        weekListNum.textContent = weekNum + ":";
 
         const listOfLinks = document.createElement('ul');
-        let linkIndex = 0;
 
-        links.forEach((link) => {
+        links.forEach((link, linkIndex) => {
             const linkListNum = document.createElement('li');
             const linkA = document.createElement('a');
 
@@ -35,7 +34,6 @@ function displayLinks(weeks) {
                 listOfLinks.appendChild(separator);
             }
 
-            linkIndex++;
         });
 
         weekListNum.appendChild(listOfLinks);
