@@ -27,7 +27,7 @@ function displayLinks(weeks) {
             const linkListNum = document.createElement('li');
             const linkA = document.createElement('a');
 
-            linkA.href = baseURL + link.url;
+            linkA.href = baseURL + linkURL;
             linkA.textContent = link.title;
 
 
