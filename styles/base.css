@@ -216,22 +216,16 @@ iframe {
 /*list*/
 .my-list {
     list-style: none;
-    counter-reset: my-counter;
     font-family: var(--paragraphs-font);
     font-size: 1.2em;
 }
 
 .my-list li {
-    counter-increment: my-counter;
     margin-bottom: 10px;
 
 }
 
-.my-list li:before {
-    content: counter(my-counter, decimal-leading-zero) ": ";
-    color: #000;
-    margin-right: 5px;
-}
+
 
 
 .hero {

@@ -4,8 +4,11 @@ const linksURL = "https://jhtr0226.github.io/wdd230/data/links.json";
 async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    displayLinks(data);
+    displayLinks(data.lessons);
 }
+getLinks();
+
+//This function got me thinking quite a lot
 
 function displayLinks(lessons) {
     const linksList = document.querySelector('.my-list');
@@ -15,29 +18,25 @@ function displayLinks(lessons) {
         const links = lesson.links;
 
         const lessonListNum = document.createElement('li');
-        lessonListNum.textContent = lessonNum + ":";
+        lessonListNum.textContent = lessonNum + ": ";
 
-        const listOfLinks = document.createElement('ul');
+        const linksSpan = document.createElement('span');
 
-        links.forEach((link, linkIndex) => {
-            const linkListNum = document.createElement('li');
+        links.forEach((link, index) => {
             const linkA = document.createElement('a');
-
             linkA.href = baseURL + link.url;
             linkA.textContent = link.title;
 
-            linkListNum.appendChild(linkA);
-            listOfLinks.appendChild(linkListNum);
+            linksSpan.appendChild(linkA);
 
-            if (linkIndex < links.length - 1) {
+            if (index < links.length - 1) {
                 const separator = document.createTextNode(' | ');
-                listOfLinks.appendChild(separator);
+                linksSpan.appendChild(separator);
             }
-
         });
 
-        lessonListNum.appendChild(listOfLinks);
+        lessonListNum.appendChild(linksSpan);
         linksList.appendChild(lessonListNum);
     });
 }
-getLinks();
+
