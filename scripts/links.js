@@ -7,6 +7,8 @@ async function getLinks() {
     displayLinks(data);
 }
 getLinks();
+
+
 function displayLinks(weeks) {
     const linksList = document.querySelector('.my-list');
 
@@ -15,7 +17,9 @@ function displayLinks(weeks) {
         const links = week.links;
 
         const weekListNum = document.createElement('li');
-        weekListNum.textContent = `${WeekNum}`;
+        weekListNum.textContent = { WeekNum };
+        linksList.appendChild(weekListNum);
+
         const listOfLinks = document.createElement('ul');
 
         links.forEach((link) => {
@@ -24,11 +28,23 @@ function displayLinks(weeks) {
 
             linkA.href = baseURL + linksURL;
             linkA.textContent = link.title;
+
+
             linkListNum.appendChild(linkA);
             listOfLinks.appendChild(linkListNum);
         });
 
         linksList.appendChild(weekListNum);
         linksList.appendChild(listOfLinks);
+
+        if (index < links.length - 1) {
+            const separator = document.createTextNode(' | ');
+            listOfLinks.appendChild(separator);
+        }
+
+        linksList.appendChild(listOfLinks);
     });
+
+
 }
+
