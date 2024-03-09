@@ -24,7 +24,7 @@ function displayLinks(lessons) {
 
         links.forEach((link, index) => {
             const linkA = document.createElement('a');
-            linkA.href = baseURL + link.url;
+            linkA.href = link.url;
             linkA.textContent = link.title;
 
             linksSpan.appendChild(linkA);
