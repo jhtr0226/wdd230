@@ -854,6 +854,7 @@ h4 {
     padding: 0.5rem;
     background-color: rgb(129, 139, 136);
     text-align: center;
+    border-radius: 5px;
 }
 
 .dark-mode .menu1 {
@@ -864,6 +865,14 @@ h4 {
 .menu1 button {
     padding: 1rem;
     font-weight: 700;
+    border-radius: 5px;
+}
+
+.dark-mode .menu1 button {
+    background: linear-gradient(to top, rgba(71, 72, 73, 1), rgba(0, 0, 0, 1));
+    ;
+    color: #fff;
+    border: 1px solid #fff;
 }
 
 #directory section {
