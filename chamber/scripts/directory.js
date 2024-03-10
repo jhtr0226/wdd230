@@ -1,39 +1,35 @@
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
+const space = document.querySelector("#card1");
 
 
 gridbutton.addEventListener("click", () => {
-    display.classList.add("grid");
-    display.classList.remove("list");
+    space.classList.add("grid");
+    space.classList.remove("list");
 });
 
-listbutton.addEventListener("click", showList);
-
-function showList() {
-    display.classList.add("list");
-    display.classList.remove("grid");
-}
-
-
+listbutton.addEventListener("click", () => {
+    space.classList.add("list");
+    space.classList.remove("grid");
+});
 
 const members = "https://jhtr0226.github.io/wdd230/chamber/data/members.json";
 
-const space = document.querySelector('#card1');
 
 async function getMembers() {
     const response = await fetch(members);
     const data = await response.json();
-    console.log(data.company);
+    /* console.log(data.company);*/
     displayMembers(data.companies);
 }
-
 getMembers();
 
+
 const displayMembers = (companies) => {
+    card1.innerHTML = "";
     companies.forEach((company) => {
         let card = document.createElement('section');
-        let name = document.createElement('h2');
+        let name = document.createElement('h3');
         let phone = document.createElement('p');
         let website = document.createElement('a');
         let membership = document.createElement('p');
@@ -43,12 +39,12 @@ const displayMembers = (companies) => {
 
         name.textContent = company.info[0].name;
         phone.textContent = `Phone: ${company.info[0].phone}`;
-        website.textContent = `Web`;
+        website.textContent = `Website`;
         website.setAttribute('href', company.info[0].url);
         website.setAttribute('target', '_blank');
         membership.textContent = `Membership Level: ${company.info[0].membership
             }`;
-        address.textContent = `Address: ${company.info[0].address}`;
+        address.textContent = `Address`;
         address.setAttribute('href', `https://www.google.com/maps/place/${encodeURIComponent(company.info[0].address)}`);
         address.setAttribute('target', '_blank');
         time.textContent = `${company.info[0].loyalty
@@ -61,13 +57,12 @@ const displayMembers = (companies) => {
         images.setAttribute('height', '250');
 
         card.appendChild(name);
+        card.appendChild(membership);
         card.appendChild(phone);
         card.appendChild(website);
-        card.appendChild(membership);
+        card.appendChild(images);
         card.appendChild(address);
         card.appendChild(time);
-        card.appendChild(images);
-
         space.appendChild(card);
     });
 }

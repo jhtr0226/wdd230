@@ -839,3 +839,94 @@ h4 {
 .dark-mode .record a:hover {
     text-shadow: 0 0 5px white, 0 0 5px black, 0 0 5px white;
 }
+
+#directory {
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 800px;
+    background-color: #fff;
+    font-family: var(--heading-font)
+}
+
+.menu1 {
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: rgb(129, 139, 136);
+    text-align: center;
+}
+
+.menu1 button {
+    padding: 1rem;
+    font-weight: 700;
+}
+
+#directory section {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.grid section>* {
+    margin: 0 auto;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+}
+
+.list section>* {
+    margin: 0 1rem;
+}
+
+.list section img {
+    display: none;
+    /* smaller viewports only */
+}
+
+.list section h3 {
+    font-size: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+    background-color: #bed;
+}
+
+#directory section h3 {
+    font-family: var(--heading-font);
+    font-size: 1em;
+    color: white;
+}
+
+#directory section p {
+    font-family: var(--paragraphs-font);
+    font-size: 1em;
+    color: white;
+}
+
+#directory section a {
+    font-family: var(--paragraphs-font);
+    font-size: 1em;
+    color: white;
+
+}
+
+img {
+    max-width: 100%;
+}
