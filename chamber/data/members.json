@@ -1,0 +1,102 @@
+{
+    "companies": [
+        {
+            "company": "BAC",
+            "info": [
+                {
+                    "name": "Banco De Costa Rica",
+                    "address": "WWWW+RQM, San José Province, Guadalupe, Santa Cecilia",
+                    "phone": "+506 2211 1111",
+                    "url": "https://www.bancobcr.com/wps/portal/bcr",
+                    "image": "https://lh5.googleusercontent.com/p/AF1QipNJs5Mp_0zh1jBFM3uyf3tggR-MBy5BcZ1Yg3So=w426-h240-k-no",
+                    "membership": "Silver",
+                    "loyalty": "12 Years"
+                }
+            ]
+        },
+        {
+            "company": "Monge",
+            "info": [
+                {
+                    "name": "Monge",
+                    "address": "Costado Norte Iglesia Católica San José Guadalupe, Av. 31, Guadalupe, 10801",
+                    "phone": "+506 4032 4753",
+                    "url": "https://www.tiendamonge.com/",
+                    "image": "https://lh5.googleusercontent.com/p/AF1QipMORYHWWMha5nSBSjc01ph8ScxGEotxGIzG0NNO=w408-h306-k-no",
+                    "membership": "Silver",
+                    "loyalty": "10 Years"
+                }
+            ]
+        },
+        {
+            "company": "Multicompro",
+            "info": [
+                {
+                    "name": "Multicompro",
+                    "address": "218, San José, Guadalupe, Moreno Canas",
+                    "phone": "+506 7269 9268",
+                    "url": "https://supercompro.cr/",
+                    "image": "https://lh3.googleusercontent.com/p/AF1QipNPs6DCFc0MFFJIqnLWsDg3NLuXR8AuIldxOpdA=s680-w680-h510",
+                    "membership": "Bronze",
+                    "loyalty": "5 years"
+                }
+            ]
+        },
+        {
+            "company": "Novacentro",
+            "info": [
+                {
+                    "name": "Novacentro",
+                    "address": "San José Province, Guadalupe, San Gerardo",
+                    "phone": "+506 2224 5373",
+                    "url": "https://www.novacentrocr.com/",
+                    "image": "https://lh5.googleusercontent.com/p/AF1QipM0zdvySPSMzg8IvPtPdcYzizSrUD5TMN4X2hA6=w408-h271-k-no",
+                    "membership": "Gold",
+                    "loyalty": "20 years"
+                }
+            ]
+        },
+        {
+            "company": "Montero Coffee",
+            "info": [
+                {
+                    "name": "Montero Coffee",
+                    "address": "WWWW+9Q4, San José Province, Guadalupe, Union Jardin",
+                    "phone": "+506 22255852",
+                    "url": "",
+                    "image": "https://lh5.googleusercontent.com/p/AF1QipN0L71wMXNlD84MXHaiXcWYH1kLhR77CyYzriBO=w427-h240-k-no",
+                    "membership": "Gold",
+                    "loyalty": "23 years"
+                }
+            ]
+        },
+        {
+            "company": "Petland",
+            "info": [
+                {
+                    "name": "Petland",
+                    "address": "WWWX+F42, San José Province, Guadalupe, Santa Eduviges",
+                    "phone": "+506 2524 2807",
+                    "url": "http://facebook.com/PetLand",
+                    "image": "https://lh5.googleusercontent.com/p/AF1QipNoJYEKFC0A1Zbw4pqJav6_1pOnaothUjubenMY=w408-h725-k-no",
+                    "membership": "Gold",
+                    "loyalty": "5 years"
+                }
+            ]
+        },
+        {
+            "company": "Metrocom",
+            "info": [
+                {
+                    "name": "Metrocom",
+                    "address": "WXW2+X2J, San José Province, Guadalupe, Santa Eduviges",
+                    "phone": "+506 2106 1995",
+                    "url": "http://www.metrocom.cr/",
+                    "image": "https://lh5.googleusercontent.com/p/AF1QipNTITEotBbOxR-a5uBKzcmgMSoOPD-SMf7TI-jK=w408-h306-k-no",
+                    "membership": "Gold",
+                    "loyalty": "3 years"
+                }
+            ]
+        }
+    ]
+}
