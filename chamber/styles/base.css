@@ -935,15 +935,18 @@ h4 {
 
 #directory section h3 {
     font-family: var(--heading-font);
-    font-size: 1em;
+    font-size: 1.2em;
     color: black;
+    padding-bottom: 25px;
 }
 
 #directory section p,
 #directory section a {
     font-family: var(--paragraphs-font);
-    font-size: 1em;
+    font-size: 0.9em;
     color: black;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .dark-mode #directory section h3 {
@@ -953,10 +956,12 @@ h4 {
 .dark-mode #directory section p,
 .dark-mode #directory section a {
     color: white;
+    text-decoration: none;
 }
 
 #directory section a:hover {
     color: rgb(10, 10, 212);
+    text-decoration: underline;
 }
 
 .dark-mode #directory section a:hover {
