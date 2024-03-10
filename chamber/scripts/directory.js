@@ -1,3 +1,22 @@
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
+
+
+gridbutton.addEventListener("click", () => {
+    display.classList.add("grid");
+    display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList);
+
+function showList() {
+    display.classList.add("list");
+    display.classList.remove("grid");
+}
+
+
+
 const members = "https://jhtr0226.github.io/wdd230/chamber/data/members.json";
 
 const space = document.querySelector('#card1');
@@ -9,7 +28,7 @@ async function getMembers() {
     displayMembers(data.companies);
 }
 
-showMembers();
+getMembers();
 
 const displayMembers = (companies) => {
     companies.forEach((company) => {
