@@ -840,20 +840,25 @@ h4 {
     text-shadow: 0 0 5px white, 0 0 5px black, 0 0 5px white;
 }
 
+
 #directory {
     margin: 0 auto;
-    padding: 0.5rem;
+    padding: 20px;
     max-width: 800px;
-    background-color: #fff;
-    font-family: var(--heading-font)
+    font-family: var(--heading-font);
+    font-size: larger;
 }
 
 .menu1 {
-    margin: 1rem auto;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
     padding: 0.5rem;
     background-color: rgb(129, 139, 136);
     text-align: center;
+}
+
+.dark-mode .menu1 {
+    background: linear-gradient(to top, rgba(71, 72, 73, 1), rgba(0, 0, 0, 1));
+    ;
 }
 
 .menu1 button {
@@ -862,25 +867,32 @@ h4 {
 }
 
 #directory section {
-    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
-    background-color: black;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.dark-mode #directory section {
+    border: 1px solid #fff;
+
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 5px;
+    grid-gap: 15px;
     align-items: center;
 }
 
 .grid section>* {
     margin: 0 auto;
+
 }
 
 .list {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
 .list section {
@@ -892,40 +904,58 @@ h4 {
 
 .list section>* {
     margin: 0 1rem;
+    padding: 10px;
 }
 
 .list section img {
     display: none;
-    /* smaller viewports only */
 }
 
 .list section h3 {
     font-size: 1rem;
-    font-family: Roboto, Helvetica, sans-serif;
+    font-family: var(--heading-font);
 }
 
 .list section:nth-child(even) {
     background-color: #bed;
 }
 
+.dark-mode .list section:nth-child(even) {
+    background-color: black;
+}
+
 #directory section h3 {
     font-family: var(--heading-font);
     font-size: 1em;
-    color: white;
+    color: black;
 }
 
-#directory section p {
-    font-family: var(--paragraphs-font);
-    font-size: 1em;
-    color: white;
-}
-
+#directory section p,
 #directory section a {
     font-family: var(--paragraphs-font);
     font-size: 1em;
-    color: white;
-
+    color: black;
 }
+
+.dark-mode #directory section h3 {
+    color: white;
+}
+
+.dark-mode #directory section p,
+.dark-mode #directory section a {
+    color: white;
+}
+
+#directory section a:hover {
+    color: rgb(10, 10, 212);
+}
+
+.dark-mode #directory section a:hover {
+    color: white;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black;
+}
+
+
 
 img {
     max-width: 100%;
