@@ -947,6 +947,7 @@ h4 {
     color: black;
     padding-bottom: 10px;
     padding-top: 10px;
+    text-decoration: none;
 }
 
 .dark-mode #directory section h3 {
@@ -956,7 +957,7 @@ h4 {
 .dark-mode #directory section p,
 .dark-mode #directory section a {
     color: white;
-    text-decoration: none;
+
 }
 
 #directory section a:hover {
