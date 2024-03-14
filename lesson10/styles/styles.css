@@ -1,0 +1,16 @@
+main {
+    margin: 0 auto;
+    max-width: 80%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+#weather-icon {
+    width: 80px;
+    height: auto;
+}
