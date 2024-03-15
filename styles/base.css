@@ -282,3 +282,7 @@ figure {
     font-size: 1.2em;
     font-family: var(--paragraphs-font);
 }
+
+figure img {
+    border-radius: 25px;
+}
