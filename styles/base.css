@@ -275,3 +275,10 @@ iframe {
     font-size: 1.5em;
     text-align: center;
 }
+
+
+figure {
+    text-align: center;
+    font-size: 1.2em;
+    font-family: var(--paragraphs-font);
+}
