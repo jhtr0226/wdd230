@@ -23,8 +23,8 @@
 </head>
 
 <body>
-
     <header>
+
         <a href="index.html"><img id="logo" src="images/logo.webp" alt="logo"></a>
         <div>
             <h1>GuadaSells</h1>
@@ -41,6 +41,18 @@
         </div>
 
     </header>
+    <div id="space"></div>
+
+    <!--<div class="banner">
+        <div class="banner-content">
+            <div class="banner-text">
+                <strong>Remember to attend to our "Chamber of commerce meet and greet" on Wednesday at 7:00
+                    PM!</strong>
+            </div>
+            <button class="banner-button" type="button">X</button>
+        </div>
+    </div>-->
+
 
     <!--
     <div id="hero-container">
@@ -72,6 +84,7 @@
     </div>
     <button id="my-button"></button>
 
+
     <main>
 
         <section class="welcome">
@@ -87,17 +100,28 @@
             <hr>
             <section class="card-1">
                 <h2>Current Events</h2>
-                <p>Event 1</p>
+                <p>Easter on 04/01</p>
                 <p>Event 2</p>
                 <p>Event 3</p>
                 <p>Event 4</p>
             </section>
             <section class="card-1">
-                <h2>Weather</h2>
+                <h2>Wind Chill</h2>
                 <p>Temperature: <input type="number" id="temperature">°F</p>
                 <p>Wind speed: <input type="number" id="wind-speed"> mph</p>
                 <button id="calculate-wind-chill">Calculate wind-chill</button>
                 <p>Wind Chill: <span id="wind-chill"></span></p>
+            </section>
+
+            <section class="card-3">
+                <h2>Weather</h2>
+                <p>The current temperature is: <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <h2 class="second-header">Weather forecast</h2>
+                <div id="forecast"></div>
             </section>
         </div>
 
@@ -108,35 +132,34 @@
                 <section class="mini-card-1">
                     <h3>MONGE</h3>
                     <p>"I got faith in MONGE"</p>
-                    <p>service@grupomonge.com</p>
+                    <p>Phone number:</p>
                     <p>+506 4032 4753</p>
                     <p><a href="https://www.tiendamonge.com/">Website</a></p>
                 </section>
                 <section class="mini-card-2">
                     <h3>BCR</h3>
                     <p>"We are the bank of Costa Rica"</p>
-                    <p>atencioncontraloria@bancobcr.com</p>
+                    <p>Phone number:</p>
                     <p>+506 2211 1111</p>
                     <p><a href="https://www.bancobcr.com/wps/portal/bcr">Website</a></p>
                 </section>
                 <section class="mini-card-1">
                     <h3>MultiCompro</h3>
                     <p>"Save money and enjoy time in family"</p>
-                    <p>customerservice@gessacr.com</p>
+                    <p>Phone number:</p>
                     <p>+506 7269 9268</p>
                     <p><a href="https://supercompro.cr/">Webiste</a></p>
                 </section>
                 <section class="mini-card-2">
-                    <h3>gh</h3>
-                    <p>Company 4: Providing quality services since 2001.</p>
-                    <p>info@example.com</p>
-                    <p>+1 123 456 7890</p>
-                    <p>Website</p>
+                    <h3>Metrocom</h3>
+                    <p>"Best internet provider in Costa Rica"</p>
+                    <p>Phone number:</p>
+                    <p>+506 2106 1995</p>
+                    <p><a href="http://www.metrocom.cr/">Website</a></p>
                 </section>
             </section>
         </div>
     </main>
-
     <footer>
         <p></p>
         <!--
@@ -158,8 +181,9 @@
 
 
     </footer>
-
+    <script src="scripts/banner.js"></script>
     <script src="scripts/burgermenu.js"></script>
+    <script src="scripts/weather.js"></script>
     <script src="scripts/wind-chill.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/dark-mode.js"></script>
