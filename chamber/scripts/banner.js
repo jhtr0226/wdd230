@@ -1,5 +1,5 @@
 const today = new Date().getDay();
-if (today >= 1 && day <= 3) {
+if (today >= 1 && today <= 3) {
     const banner = document.createElement('div');
     const bannerContent = document.createElement('div');
     const bannerText = document.createElement('div');
