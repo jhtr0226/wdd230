@@ -245,6 +245,26 @@ main p {
     margin: 0 auto;
 }
 
+.welcome a {
+    text-decoration: none;
+    color: navy;
+}
+
+.welcome a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.dark-mode .welcome a {
+    color: white;
+    text-decoration: underline;
+}
+
+.dark-mode .welcome a:hover {
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black;
+}
+
+
 
 
 footer {
