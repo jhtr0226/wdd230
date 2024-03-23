@@ -320,7 +320,8 @@ hr {
 }
 
 
-.card-2 {
+.card-2,
+.new {
     border-radius: 5px;
     width: 100%;
     max-width: 100%;
@@ -328,7 +329,13 @@ hr {
     place-items: center;
 }
 
-.card-2 h2 {
+.new h2 {
+    margin: 0 auto;
+    width: 55%;
+}
+
+.card-2 h2,
+.new h2 {
     background: var(--primary-color);
     font-size: 1.5em;
     font-family: var(--heading-font);
@@ -365,22 +372,24 @@ hr {
 
 }
 
-.mini-card-1 p a {
+.mini-card-1 a {
     color: black;
     text-decoration: none;
+    font-size: 1.5em;
+    font-family: var(--paragraphs-font);
 }
 
-.mini-card-1 p a:hover {
+.mini-card-1 a:hover {
     text-decoration: underline;
     color: blue;
 }
 
-.dark-mode .mini-card-1 p a {
+.dark-mode .mini-card-1 a {
     color: white;
     text-decoration: none;
 }
 
-.dark-mode .mini-card-1 p a:hover {
+.dark-mode .mini-card-1 a:hover {
     text-decoration: underline;
     text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black;
 }
