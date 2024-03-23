@@ -1,6 +1,4 @@
 const container = document.querySelector(".card-2");
-const forHeader = document.querySelector(".three");
-
 const members = "https://jhtr0226.github.io/wdd230/chamber/data/members.json";
 
 async function getMembers() {
@@ -16,14 +14,12 @@ async function getMembers() {
 function displayMembers(companies) {
     container.innerHTML = "";
     companies.forEach(company => {
-        let header = document.createElement('h2');
         let card = document.createElement('section');
         let name = document.createElement('h3');
         let phone = document.createElement('p');
         let website = document.createElement('a');
         let image = document.createElement('img');
 
-        header.textContent = `Weekly Spot Lights`;
         name.textContent = company.info[0].name;
         phone.textContent = `Phone: ${company.info[0].phone}`;
         website.textContent = `Website`;
