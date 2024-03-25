@@ -59,6 +59,19 @@ function updateDisplay() {
             displayMembers(selectedCompanies);
         }
     }
+
+    else if (currentDay !== 6) {
+        let selectedCompanies = JSON.parse(localStorage.getItem('selectedCompanies'));
+        if (!selectedCompanies) {
+            getMembers().then(companies => {
+                selectedCompanies = companies.sort(() => 0.5 - Math.random()).slice(0, 4);
+                localStorage.setItem('selectedCompanies', JSON.stringify(selectedCompanies));
+                displayMembers(selectedCompanies);
+            });
+        } else {
+            displayMembers(selectedCompanies);
+        }
+    }
 }
 
 updateDisplay();
