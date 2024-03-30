@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Contact Page</title>
+    <meta name="description" content="Commerce Website">
+    <meta name="author" content="Johann Tellez">
+
+    <meta property="og:title" content="Contact Us Page">
+    <meta property="og:type" content="website.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://jhtr0226.github.io/wdd230/scoots/contact/">
+
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/icon.webp">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-section">
+            <a href="index.html"><img id="logo" src="images/logo.webp" alt="logo" loading="lazy"></a>
+            <div>
+                <h1>Scoots</h1>
+                <p>Motor scooter rental company</p>
+            </div>
+
+        </div>
+
+
+        <div class="social-header">
+            <a href="facebook.com" target="_blank">
+                <img class="social-icon" src="images/facebook.webp" alt="fb-icon">
+            </a>
+            <a href="twitter.com" target=" _blank">
+                <img class="social-icon" src="images/twitter.webp" alt="twitter-icon">
+            </a>
+            <a href="instagram.com" target="_blank">
+                <img class="social-icon" src="images/instagram.webp" alt="instagram-icon">
+            </a>
+        </div>
+        <div class="getting-dark">
+            <label class="switch" id="mode">
+                <input type="checkbox" id="dark-mode-toggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+    </header>
+
+
+    <div>
+        <nav class="navigation">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="rentals.html">Rent</a></p>
+            <p><a href="reservation.html">Reserve</a></p>
+            <p><a href="#" class="active">CONTACT US!</a></p>
+        </nav>
+    </div>
+    <button id="my-button"></button>
+    <h2>Contact Us</h2>
+
+
+    <main class="main-discover">
+
+        <hr class="hrv2">
+
+        <div class="the-form">
+            <form method="get" action="thankyou.html" class="wf2">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label>First Name*<input type="text" name="fname" id="fname" required></label>
+                    <label>Last Name*<input type="text" name="lname" id="lname" required></label>
+                    <label>Email<input type="email" placeholder="example@gmail.com" name="email" id="email"></label>
+                    <label>Phone Number*<input type="tel" placeholder="1234567890" name="phone" id="phone"
+                            required></label>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label>Business Name<input type="text" name="bn" id="bn" required></label>
+                    <label>My Position in the Business <input type="text" name="title" id="title"
+                            pattern="[a-zA-Z\-]{7,}" placeholder="Marketing Manager"></label>
+                    <label>Business Description<textarea name="bd" id="bd" rows="5"
+                            placeholder="Your business description goes here!"></textarea></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <label for="membership">Membership Level:</label>
+                    <select id="membership" name="membership" required>
+                        <option value="">Please Select</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                        <option value="NP">Non Profit</option>
+                        <option value="Silver">Silver Membership</option>
+
+                    </select>
+                </fieldset>
+                <input type="hidden" id="submission_time" name="submission_time">
+                <button type="submit">Join Now</button>
+            </form>
+        </div>
+
+
+        <div class="the-table">
+            <table>
+                <caption>
+                    Benefits
+                </caption>
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Special Events</th>
+                        <th scope="col">Training</th>
+                        <th scope="col">Advertising</th>
+                        <th scope="col">Events Discount</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Gold</th>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>50%</td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Silver</th>
+                        <td>❌</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>40%</td>
+                        <td>$250</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Bronze</th>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                        <td>30%</td>
+                        <td>$200</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Non Profit</th>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                        <td>25%</td>
+                        <td>$150</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p></p>
+
+        <p id="lastModified"></p>
+
+
+    </footer>
+
+    <script src="scripts/burgermenu.js"></script>
+    <script src="scripts/submission.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+
+</body>
+
+</html>

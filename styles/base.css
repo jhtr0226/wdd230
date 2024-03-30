@@ -138,6 +138,7 @@ nav {
     text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black;
 }
 
+/*
 footer {
     font-size: 1.2em;
     max-width: 100%;
@@ -150,12 +151,21 @@ footer {
     border-radius: 5px;
 }
 
+
+.social-footer a {
+    font-size: 1.2em;
+}
+
+.social-icon {
+    width: 50px;
+}
+
 footer p {
     font-family: var(--paragraphs-font);
     color: white;
     text-align: center;
 
-}
+}*/
 
 .card {
     border-radius: 5px;

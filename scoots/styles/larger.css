@@ -1,0 +1,162 @@
+@media screen and (min-width: 1201px) and (max-width: 4000px) {
+    /*#hero-img {
+        height: 600px;
+        align-items: center;
+
+    }
+
+    #hero-container {
+        max-width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }*/
+
+    .social-header {
+        display: flex;
+        align-items: center;
+    }
+
+    .social-footer {
+        display: none;
+    }
+
+    header {
+        padding: 0 50px;
+    }
+
+    .logo-section {
+        display: flex;
+        align-items: center;
+    }
+
+    #logo {
+        border-radius: 50px;
+        width: 100px;
+        height: 100px;
+        justify-content: center;
+    }
+
+    h1 {
+        margin-top: 50px;
+        text-align: center;
+        font-family: var(--heading-font);
+        margin: 0 auto;
+        font-size: 2.5em;
+
+    }
+
+    header p {
+        font-family: var(--heading-font);
+        font-size: 1em;
+        margin: 0 auto;
+
+    }
+
+    .social-icon {
+        padding: 15px;
+        width: 50px;
+        height: auto;
+        margin-right: 30px;
+    }
+
+
+    .navigation a:hover {
+        color: #ffffff;
+    }
+
+    .navigation {
+        margin-top: 0px;
+        /*new onw*/
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation.open {
+        display: flex;
+    }
+
+    #my-button {
+        display: none;
+    }
+
+    .hero-text {
+
+        padding: 40px 50px;
+
+    }
+
+    header p {
+        margin-bottom: 60px;
+    }
+
+    header {
+        margin-bottom: 0px;
+    }
+
+    /*#logo {}
+
+    h1 {}*/
+
+    .one {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .three {
+        align-items: center;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    hr {
+
+        grid-column: span 2;
+    }
+
+    .three h2 {
+        grid-column: span 4;
+        justify-items: center;
+    }
+
+    .gallery img:hover,
+    .card-1-1 img:hover {
+        opacity: .6;
+        transform: scale(1.1);
+    }
+
+    .gallery figure {
+        position: relative;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .gallery figcaption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px;
+        margin: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        font-family: var(--heading-font);
+    }
+
+    .gallery figure:hover figcaption {
+        opacity: 1;
+    }
+
+
+    .card-3 {
+        grid-column: 1/3;
+    }
+
+}

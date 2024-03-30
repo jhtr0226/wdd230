@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Home page</title>
+    <meta name="description" content="Motor scooter rental company">
+    <meta name="author" content="Johann Tellez">
+
+    <meta property="og:title" content="Scoots - Motor scooter rental company - Home Page">
+    <meta property="og:type" content="website.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://jhtr0226.github.io/wdd230/scoots/">
+
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/icon.webp">
+</head>
+
+<body>
+    <header>
+        <div class="logo-section">
+            <a href="index.html"><img id="logo" src="images/logo.webp" alt="logo" loading="lazy"></a>
+            <div>
+                <h1>Scoots</h1>
+                <p>Motor scooter rental company</p>
+            </div>
+
+        </div>
+
+
+        <div class="social-header">
+            <a href="facebook.com" target="_blank">
+                <img class="social-icon" src="images/facebook.webp" alt="fb-icon">
+            </a>
+            <a href="twitter.com" target=" _blank">
+                <img class="social-icon" src="images/twitter.webp" alt="twitter-icon">
+            </a>
+            <a href="instagram.com" target="_blank">
+                <img class="social-icon" src="images/instagram.webp" alt="instagram-icon">
+            </a>
+        </div>
+        <div class="getting-dark">
+            <label class="switch" id="mode">
+                <input type="checkbox" id="dark-mode-toggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+    </header>
+
+
+    <div>
+        <nav class="navigation">
+            <p><a href="#" class="active">Home</a></p>
+            <p><a href="rentals.html">Rent</a></p>
+            <p><a href="reservation.html">Reserve</a></p>
+            <p><a href="contact.html">CONTACT US!</a></p>
+        </nav>
+    </div>
+    <button id="my-button"></button>
+    <!--
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+            <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+            <img src="images/hero-large.webp" alt="table setting" width="1500" height="750">
+        </picture>
+        <div>
+            <a href="contact.html" id="my-other-button"><span>Make a reservation!</span>
+            </a>
+        </div>
+    </div>-->
+    <div class="hero">
+        <div class="slideshow-container">
+
+            <div class="slide fade">
+                <picture>
+                    <source srcset="images/hero-1-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/hero-1-medium.webp" media="(max-width: 1000px)">
+                    <img src="images/hero-1-large.webp" alt="Hero Image 1" width="1500" height="750">
+                </picture>
+                <a href="reservation.html">
+                    <button class="hero-text one-box">Rent a scooter</button>
+                </a>
+            </div>
+
+            <div class="slide fade">
+                <picture>
+                    <source srcset="images/hero-2-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/hero-2-medium.webp" media="(max-width: 1000px)">
+                    <img src="images/hero-2-large.webp" alt="Hero Image 2" width="1500" height="750">
+                </picture>
+                <a href="rentals.html">
+                    <button class="hero-text two-box">Feel the power</button>
+                </a>
+            </div>
+
+            <div class="slide fade">
+                <picture>
+                    <source srcset="images/hero-3-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/hero-3-medium.webp" media="(max-width: 1000px)">
+                    <img src="images/hero-3-large.webp" alt="Hero Image 3" width="1500" height="750">
+                </picture>
+                <a href="#">
+                    <button class="hero-text three-box">Enjoy our service</button>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+    <!--<div>
+            <a href="contact.html" id="my-other-button"><span>Make a reservation!</span></a>
+        </div>-->
+
+
+    <main>
+
+        <div class="one">
+            <hr>
+            <section class="card-1">
+
+            </section>
+            <section class="card-1">
+
+            </section>
+
+            <section class="card-3">
+                <h2>Weather</h2>
+                <p>The current temperature is: <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="scripts/weather.js" alt="n/a">
+                    <figcaption></figcaption>
+                </figure>
+                <h2 class="second-header">Weather forecast</h2>
+                <div id="forecast"></div>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        <p></p>
+
+        <div class="social-footer">
+            <a href="facebook.com" target="_blank">
+                <img class="social-icon" src="images/facebook.webp" alt="fb-icon">
+            </a>
+            <a href="#x.com target=" _blank">
+                <img class="social-icon" src="images/twitter.webp" alt="twitter-icon">
+            </a>
+            <a href="instagram.com" target="_blank">
+                <img class="social-icon" src="images/instagram.webp" alt="instagram-icon">
+            </a>
+        </div>
+        <p id="lastModified"></p>
+
+
+    </footer>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/burgermenu.js"></script>
+    <script src="scripts/sliders.js"></script>
+    <script src="scripts/weather.js"></script>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+
+</body>
+
+</html>
