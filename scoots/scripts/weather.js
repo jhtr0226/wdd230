@@ -61,7 +61,7 @@ function displayResults(data) {
     banner.classList.add('banner');
     bannerContent.classList.add('banner-content');
     bannerText.classList.add('banner-text');
-    bannerText.innerHTML = `High temperature today: ${maxTemp}`;
+    bannerText.innerHTML = `Highest temperature today of: ${maxTemp}`;
     closeButton.classList.add('banner-button');
     closeButton.innerHTML = '<span class="material-icons">close</span>';
 
