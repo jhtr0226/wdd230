@@ -22,17 +22,17 @@
 </head>
 
 <body>
+    <div id="space"></div>
+
     <header>
         <div class="logo-section">
             <a href="index.html"><img id="logo" src="images/logo.webp" alt="logo" loading="lazy"></a>
-            <div>
+            <div class="text-container">
                 <h1>Scoots</h1>
                 <p>Motor scooter rental company</p>
+
             </div>
-
         </div>
-
-
         <div class="social-header">
             <a href="facebook.com" target="_blank">
                 <img class="social-icon" src="images/facebook.webp" alt="fb-icon">
@@ -52,8 +52,6 @@
         </div>
 
     </header>
-
-
     <div>
         <nav class="navigation">
             <p><a href="#" class="active">Home</a></p>
@@ -63,60 +61,34 @@
         </nav>
     </div>
     <button id="my-button"></button>
-    <!--
+
+
+    <div id="space"></div>
+
+
     <div class="hero">
-        <picture>
-            <source srcset="images/hero-small.webp" media="(max-width: 500px)">
-            <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
-            <img src="images/hero-large.webp" alt="table setting" width="1500" height="750">
-        </picture>
-        <div>
-            <a href="contact.html" id="my-other-button"><span>Make a reservation!</span>
-            </a>
+        <div class="slide-content">
+            <picture class="slide">
+                <source srcset="images/hero-1-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-1-medium.webp" media="(max-width: 1500px)">
+                <img src="images/hero-1-large.webp" alt="Hero Image 1" width="1500" height="750">
+            </picture>
+
+            <picture class="slide">
+                <source srcset="images/hero-2-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-2-medium.webp" media="(max-width: 1500px)">
+                <img src="images/hero-2-large.webp" alt="Hero Image 2" width="1500" height="750">
+            </picture>
+
+            <picture class="slide">
+                <source srcset="images/hero-3-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-3-medium.webp" media="(max-width: 1500px)">
+                <img src="images/hero-3-large.webp" alt="Hero Image 3" width="1500" height="750">
+            </picture>
         </div>
-    </div>-->
-    <div class="hero">
-        <div class="slideshow-container">
-
-            <div class="slide fade">
-                <picture>
-                    <source srcset="images/hero-1-small.webp" media="(max-width: 500px)">
-                    <source srcset="images/hero-1-medium.webp" media="(max-width: 1000px)">
-                    <img src="images/hero-1-large.webp" alt="Hero Image 1" width="1500" height="750">
-                </picture>
-                <a href="reservation.html">
-                    <button class="hero-text one-box">Rent a scooter</button>
-                </a>
-            </div>
-
-            <div class="slide fade">
-                <picture>
-                    <source srcset="images/hero-2-small.webp" media="(max-width: 500px)">
-                    <source srcset="images/hero-2-medium.webp" media="(max-width: 1000px)">
-                    <img src="images/hero-2-large.webp" alt="Hero Image 2" width="1500" height="750">
-                </picture>
-                <a href="rentals.html">
-                    <button class="hero-text two-box">Feel the power</button>
-                </a>
-            </div>
-
-            <div class="slide fade">
-                <picture>
-                    <source srcset="images/hero-3-small.webp" media="(max-width: 500px)">
-                    <source srcset="images/hero-3-medium.webp" media="(max-width: 1000px)">
-                    <img src="images/hero-3-large.webp" alt="Hero Image 3" width="1500" height="750">
-                </picture>
-                <a href="#">
-                    <button class="hero-text three-box">Enjoy our service</button>
-                </a>
-            </div>
-
-
-        </div>
+        <div class="content-hero"><a>Rent Now!</a></div>
     </div>
-    <!--<div>
-            <a href="contact.html" id="my-other-button"><span>Make a reservation!</span></a>
-        </div>-->
+
 
 
     <main>
@@ -131,13 +103,14 @@
             </section>
 
             <section class="card-3">
-                <h2>Weather</h2>
-                <p>The current temperature is: <span id="current-temp"></span></p>
+                <h2>Today's Weather</h2>
+                <p>Temp: <span id="current-temp"></span></p>
+                <p>Humidity: <span id="current-hum"></span>%</p>
                 <figure>
                     <img id="weather-icon" src="scripts/weather.js" alt="n/a">
                     <figcaption></figcaption>
                 </figure>
-                <h2 class="second-header">Weather forecast</h2>
+                <h2 class="second-header">Tomorrow's Weather</h2>
                 <div id="forecast"></div>
             </section>
         </div>
@@ -161,10 +134,10 @@
 
 
     </footer>
-    <script src="scripts/banner.js"></script>
+    <script src="scripts/weather.js"></script>
     <script src="scripts/burgermenu.js"></script>
     <script src="scripts/sliders.js"></script>
-    <script src="scripts/weather.js"></script>
+
 
     <script src="scripts/getdates.js"></script>
     <script src="scripts/dark-mode.js"></script>

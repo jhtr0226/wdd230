@@ -1,12 +1,21 @@
+/*banner*/
+const spaceDiv = document.getElementById('space');
+const banner = document.createElement('div');
+const bannerContent = document.createElement('div');
+const bannerText = document.createElement('div');
+const closeButton = document.createElement('button');
+
+
+
+/*Weather*/
 const currentTemp = document.querySelector('#current-temp');
+const currentHum = document.querySelector('#current-hum');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
-
-
 const time = new Date().getHours();
-
 const nightColor = '#4123aa';
 const dayColor = '#6f52d6';
+
 /*
 near the terminal puerta maya
 20.475284913462573 , 
@@ -18,8 +27,6 @@ Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel
 
 
 const url = "https://api.openweathermap.org/data/2.5/weather?lat=20.47&lon=-86.97&appid=bb5de5d3b5542a168c6a4a0d75756bd0&units=imperial&units=imperial";
-
-
 async function getWeather() {
     try {
         const response = await fetch(url);
@@ -36,14 +43,42 @@ async function getWeather() {
 }
 getWeather();
 
+
+
+
 function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp.toFixed(0)}&deg;F`;
+    currentHum.innerHTML = `${data.main.humidity}`
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc)
     weatherIcon.setAttribute('alt', desc)
     captionDesc.textContent = desc;
+
+    /*////////////////////////////////////////////////////////////////////////*/
+    const maxTemp = `${data.main.temp_max.toFixed(0)}&deg;F`;
+
+    banner.classList.add('banner');
+    bannerContent.classList.add('banner-content');
+    bannerText.classList.add('banner-text');
+    bannerText.innerHTML = `High temperature today: ${maxTemp}`;
+    closeButton.classList.add('banner-button');
+    closeButton.innerHTML = '<span class="material-icons">close</span>';
+
+    bannerContent.appendChild(bannerText);
+    bannerContent.appendChild(closeButton);
+    banner.appendChild(bannerContent);
+    spaceDiv.innerHTML = '';
+    spaceDiv.appendChild(banner);
 }
+
+closeButton.addEventListener("click", function () {
+    banner.style.display = "none";
+});
+/*////////////////////////////////////////////////////////////////////////////*/
+
+
+
 
 if (time >= 18 || time < 6) {
     weatherIcon.style.backgroundColor = nightColor;
@@ -79,17 +114,17 @@ forecasting();
 
 function displayingForecast(data) {
     forecastDiv.innerHTML = "";
-    let counter = 0;
     let nextDays = new Date();
     nextDays.setDate(nextDays.getDate() + 1);
-    nextDays.setHours(12, 0, 0, 0);
+    nextDays.setHours(15, 0, 0, 0);
 
+    let forecastAdded = false;
 
     for (const forecast of data.list) {
         const forecastDay = new Date(forecast.dt * 1000);
-        forecastDay.setHours(12, 0, 0, 0);
+        forecastDay.setHours(15, 0, 0, 0);
 
-        if (forecastDay.getDate() === nextDays.getDate() && counter < 3) {
+        if (forecastDay.getDate() === nextDays.getDate()) {
 
             const forecastTemp = `${forecast.main.temp.toFixed(0)}&deg;F`;
             const descriptions = forecast.weather[0].description;
@@ -102,12 +137,17 @@ function displayingForecast(data) {
             <p>${descriptions}</p>`;
 
             forecastDiv.appendChild(forecastItem);
-            counter++;
-            nextDays.setDate(nextDays.getDate() + 1);
-        }
-        if (counter === 3) {
+            forecastAdded = true;
             break;
         }
     }
 
+    if (!forecastAdded) {
+        const noForecastMessage = document.createElement('p');
+        noForecastMessage.textContent = "No forecast available for tomorrow.";
+        forecastDiv.appendChild(noForecastMessage);
+    }
+
 }
+
+

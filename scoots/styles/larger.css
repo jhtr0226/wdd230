@@ -13,7 +13,7 @@
 
     .social-header {
         display: flex;
-        align-items: center;
+        justify-content: flex-end;
     }
 
     .social-footer {
@@ -27,6 +27,7 @@
     .logo-section {
         display: flex;
         align-items: center;
+        margin: 0;
     }
 
     #logo {
@@ -34,6 +35,7 @@
         width: 100px;
         height: 100px;
         justify-content: center;
+        margin-left: 10px;
     }
 
     h1 {
@@ -42,6 +44,7 @@
         font-family: var(--heading-font);
         margin: 0 auto;
         font-size: 2.5em;
+        color: purple;
 
     }
 
@@ -87,9 +90,9 @@
         display: none;
     }
 
-    .hero-text {
-
-        padding: 40px 50px;
+    #my-other-button {
+        top: 80%;
+        padding: 20px 30px;
 
     }
 
@@ -104,6 +107,9 @@
     /*#logo {}
 
     h1 {}*/
+    .logo-section {
+        justify-content: flex-end;
+    }
 
     .one {
         grid-template-columns: repeat(2, 1fr);

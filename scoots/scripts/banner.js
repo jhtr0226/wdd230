@@ -1,29 +1,28 @@
-const today = new Date().getDay();
-if (today >= 1 && today <= 3) {
-    const banner = document.createElement('div');
-    const bannerContent = document.createElement('div');
-    const bannerText = document.createElement('div');
-    const closeButton = document.createElement('button');
 
-    banner.classList.add('banner');
-    bannerContent.classList.add('banner-content');
-    bannerText.classList.add('banner-text');
-    bannerText.textContent = "Remember to attend our Chamber of Commerce meet and greet on Wednesday at 7:00 PM!";
-    closeButton.classList.add('banner-button');
-    closeButton.innerHTML = '<span class="material-icons">close</span>';
+const banner = document.createElement('div');
+const bannerContent = document.createElement('div');
+const bannerText = document.createElement('div');
+const closeButton = document.createElement('button');
 
-    bannerContent.appendChild(bannerText);
-    bannerContent.appendChild(closeButton);
-    banner.appendChild(bannerContent);
+banner.classList.add('banner');
+bannerContent.classList.add('banner-content');
+bannerText.classList.add('banner-text');
+bannerText.textContent = "Remember to attend our Chamber of Commerce meet and greet on Wednesday at 7:00 PM!";
+closeButton.classList.add('banner-button');
+closeButton.innerHTML = '<span class="material-icons">close</span>';
 
-    const spaceDiv = document.getElementById('space');
-    spaceDiv.appendChild(banner);
+bannerContent.appendChild(bannerText);
+bannerContent.appendChild(closeButton);
+banner.appendChild(bannerContent);
+
+const spaceDiv = document.getElementById('space');
+spaceDiv.appendChild(banner);
 
 
-    closeButton.addEventListener("click", function () {
-        banner.style.display = "none";
-    });
-}
+closeButton.addEventListener("click", function () {
+    banner.style.display = "none";
+});
+
 
 
 

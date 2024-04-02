@@ -11,20 +11,15 @@
         margin: 0 auto;
         text-align: center;
     }*/
-    .social-header {
-        display: flex;
-    }
 
     .social-footer {
         display: none;
     }
 
-
-    header>div {
-        flex-grow: 1;
+    .social-header {
         display: flex;
-        justify-content: center;
-        align-items: center;
+
+        margin: 0;
 
     }
 
@@ -34,8 +29,10 @@
         width: 100px;
         height: 100px;
         justify-content: center;
-
+        margin-right: 20%;
     }
+
+
 
     h1 {
         margin-top: 50px;
@@ -79,9 +76,15 @@
         display: none;
     }
 
-    .hero-text {
+    #my-other-button {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        color: white;
         padding: 20px 30px;
-
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
     }
 
     header p {
