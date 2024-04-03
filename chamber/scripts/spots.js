@@ -2,12 +2,9 @@ const container = document.querySelector(".card-2");
 const members = "https://jhtr0226.github.io/wdd230/chamber/data/members.json";
 
 async function getMembers() {
-
     const response = await fetch(members);
     const data = await response.json();
     return data.companies;
-
-
 }
 
 
