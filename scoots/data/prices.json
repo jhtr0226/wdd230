@@ -5,7 +5,7 @@
             "details": [
                 {
                     "name": "Honda Metropolitan",
-                    "image": "scoots/images/metropolitan.webp",
+                    "image": "images/metropolitan.webp",
                     "capacity": "1",
                     "reservation": [
                         {
@@ -27,7 +27,7 @@
             "details": [
                 {
                     "name": "Honda Dio Scooter",
-                    "image": "scoots/images/dio-scooter.webp",
+                    "image": "images/dio-scooter.webp",
                     "capacity": "2",
                     "reservation": [
                         {
@@ -49,7 +49,7 @@
             "details": [
                 {
                     "name": "Honda PCX150",
-                    "image": "scoots/images/pcx.webp",
+                    "image": "images/pcx.webp",
                     "capacity": "2",
                     "reservation": [
                         {
@@ -71,7 +71,7 @@
             "details": [
                 {
                     "name": "Honda Pioneer 1000",
-                    "image": "scoots/images/honda-pioneer.webp",
+                    "image": "images/honda-pioneer.webp",
                     "capacity": "4",
                     "reservation": [
                         {
@@ -93,7 +93,7 @@
             "details": [
                 {
                     "name": "Jeep Wrangler - 4 door with a/c",
-                    "image": "scoots/images/4door-wrangler.webp",
+                    "image": "images/4door-wrangler.webp",
                     "capacity": "5",
                     "reservation": [
                         {
@@ -115,7 +115,7 @@
             "details": [
                 {
                     "name": "Jeep Wrangler - 2 door",
-                    "image": "scoots/images/4door-wrangler.webp",
+                    "image": "images/4door-wrangler.webp",
                     "capacity": "4",
                     "reservation": [
                         {
