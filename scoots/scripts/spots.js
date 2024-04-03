@@ -34,11 +34,14 @@ async function displayVehicles() {
 
     if (window.innerWidth >= 768 && window.innerWidth < 1024) {
         vehiclesToDisplay = vehicles.slice(0, 2);
-
-    } else if (window.innerWidth >= 1024) {
+    }
+    else if (window.innerWidth >= 1024) {
         vehiclesToDisplay = vehicles.slice(0, 3);
     }
+    else {
 
+        vehiclesToDisplay = vehicles.slice(0, 1);
+    }
 
     vehiclesToDisplay.forEach(vehicle => {
         const vElement = vehicleElement(vehicle);
