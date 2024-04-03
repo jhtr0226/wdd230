@@ -30,17 +30,20 @@ async function displayVehicles() {
     const vehicleSlideshow = document.getElementById('vehicleSlides');
     vehicleSlideshow.innerHTML = '';
 
-    if (window.innerWidth < 768) {
-        const randomVehicleIndex = Math.floor(Math.random() * vehicles.length);
-        const randomVehicle = vehicles[randomVehicleIndex];
-        const vElement = vehicleElement(randomVehicle);
-        vehicleSlideshow.appendChild(vElement);
-    } else {
-        vehicles.forEach(vehicle => {
-            const vElement = vehicleElement(vehicle);
-            vehicleSlideshow.appendChild(vElement);
-        });
+    let vehiclesToDisplay = vehicles;
+
+    if (window.innerWidth >= 768 && window.innerWidth < 1024) {
+        vehiclesToDisplay = vehicles.slice(0, 2);
+
+    } else if (window.innerWidth >= 1024) {
+        vehiclesToDisplay = vehicles.slice(0, 3);
     }
+
+
+    vehiclesToDisplay.forEach(vehicle => {
+        const vElement = vehicleElement(vehicle);
+        vehicleSlideshow.appendChild(vElement);
+    });
 }
 
 displayVehicles();
