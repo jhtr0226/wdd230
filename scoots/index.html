@@ -62,12 +62,12 @@
     </div>
     <button id="my-button"></button>
 
-
     <div id="space"></div>
 
-
     <div class="hero">
+
         <div class="slide-content">
+
             <picture class="slide">
                 <source srcset="images/hero-1-small.webp" media="(max-width: 500px)">
                 <source srcset="images/hero-1-medium.webp" media="(max-width: 1500px)">
@@ -92,28 +92,48 @@
 
 
     <main>
-
         <div class="one">
-            <hr>
-            <section class="card-1">
+
+
+            <section class="info upper-left"><!--info/// upper left-->
+                <h2>SCOOTS!</h2>
+                <p>Best website to rent a jeeps and scooters!</p>
+            </section>
+
+            <div class="two">
+                <section>
+                    <h3>Save Money up renting</h3>
+                    <h3>hi</h3>
+                    <h3>hi</h3>
+                    <h3>hi</h3>
+                </section>
+            </div>
+
+
+
+            <section class="weather-condition middle-left">
+                <div>
+                    <h2>Today's Weather</h2>
+                    <p>Temp: <span id="current-temp"></span></p>
+                    <p>Humidity: <span id="current-hum"></span>%</p>
+                    <figure>
+                        <img id="weather-icon" src="scripts/weather.js" alt="n/a">
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
 
             </section>
-            <section class="card-1">
 
-            </section>
-
-            <section class="card-3">
-                <h2>Today's Weather</h2>
-                <p>Temp: <span id="current-temp"></span></p>
-                <p>Humidity: <span id="current-hum"></span>%</p>
-                <figure>
-                    <img id="weather-icon" src="scripts/weather.js" alt="n/a">
-                    <figcaption></figcaption>
-                </figure>
-                <h2 class="second-header">Tomorrow's Weather</h2>
-                <div id="forecast"></div>
+            <section class="weather-condition down-left">
+                <div>
+                    <h2 class="second-header">Tomorrow's Weather</h2>
+                    <div id="forecast"></div>
+                </div>
             </section>
         </div>
+        </div>
+
+
 
     </main>
     <footer>

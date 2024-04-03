@@ -143,8 +143,19 @@ main p {
 }
 
 
-.card-1,
-.card-3 {
+/*info*/
+.info {
+    max-width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    place-items: center;
+}
+
+.weather-condition {
     border-radius: 5px;
     width: 100%;
     max-width: 100%;
@@ -153,8 +164,8 @@ main p {
     place-items: center;
 }
 
-.card-1 h2,
-.card-3 h2 {
+.info h2,
+.weather-condition h2 {
     background-color: var(--secondary-color);
     font-size: 1.5em;
     font-family: var(--heading-font);
@@ -168,15 +179,6 @@ main p {
 
 }
 
-.welcome {
-    border-radius: 5px;
-    width: 100%;
-    max-width: 60%;
-    border: 1px solid #000;
-    margin-bottom: 20px;
-    place-items: center;
-    margin: 0 auto;
-}
 
 .welcome h2 {
     background-color: var(--secondary-color);
@@ -233,6 +235,7 @@ main p {
 
 
 hr {
+
     margin-top: 25px;
     width: 100%;
     color: #000;
@@ -264,94 +267,9 @@ footer p {
     gap: 15px;
 }
 
-.two {
-    display: grid;
-
-}
-
-.three {
-    display: grid;
-    gap: 10px;
-    margin: 0 auto;
-}
-
-
-.card-2,
-.new {
-    border-radius: 5px;
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 20px;
-    place-items: center;
-}
-
-.new h2 {
-    margin: 0 auto;
-    width: 55%;
-}
-
-.card-2 h2,
-.new h2 {
-    background: var(--secondary-color);
-    font-size: 1.5em;
-    font-family: var(--heading-font);
-    border-radius: 50px;
-    color: white;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 10px;
-    padding: 15px;
-
-}
-
-
-.mini-card-1 {
-    border-radius: 5px;
-    width: 80%;
-    max-width: 100%;
-    border: 1px solid #000;
-    margin-bottom: 20px;
-}
-
-.mini-card-1 h3 {
-    margin: 0 auto;
-    background-color: var(--primary-color);
-    font-size: 1.5em;
-    font-family: var(--heading-font);
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    color: white;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 10px;
-    padding: 15px;
-
-}
-
-.mini-card-1 a {
-    color: black;
-    text-decoration: none;
-    font-size: 1.5em;
-    font-family: var(--paragraphs-font);
-}
-
-.mini-card-1 a:hover {
-    text-decoration: underline;
-    color: blue;
-}
-
 
 /*Dark mode*/
 
-.dark-mode .mini-card-1 a {
-    color: white;
-    text-decoration: none;
-}
-
-.dark-mode .mini-card-1 a:hover {
-    text-decoration: underline;
-    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black;
-}
 
 .dark-mode {
     background-color: #000;
@@ -434,16 +352,10 @@ input:checked+.slider:before {
     position: absolute;
     top: 2rem;
     right: .5rem;
-
 }
 
-.dark-mode .card-1,
-.dark-mode .welcome,
-.dark-mode .card-1,
-.dark-mode .mini-card-1,
-.dark-mode .gallery,
-.dark-mode .card-1-1,
-.dark-mode .card-3 {
+.dark-mode .info,
+.dark-mode .weather-condition {
     border: 1px solid rgb(175, 170, 170);
     /*
     background-color: #153aa0a4;*/
@@ -452,25 +364,19 @@ input:checked+.slider:before {
 
 /*Hero*/
 
-.hero {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(211, 101, 38));
-}
-
 .hero img {
     width: 100%;
     height: auto;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     display: block;
 }
 
 .content-hero {
-    position: absolute;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     background-color: #bcbe0fd2;
     color: white;
@@ -478,7 +384,8 @@ input:checked+.slider:before {
     border-radius: 5px;
     cursor: pointer;
     font-family: var(--paragraphs-font);
-    transition: all 0.5s;
+    margin: 0 auto;
+    width: 40%;
     text-shadow: 0 0 5px white, 0 0 5px black, 0 0 5px white;
     box-shadow: 5px -5px 10px white, -5px 5px 10px white;
 }
@@ -522,162 +429,8 @@ input:checked+.slider:before {
     position: sticky;
 }
 
-/*-------------------------*/
+/*------------Second page-------------*/
 
-
-.main-discover {
-    max-width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 20px;
-    display: grid;
-    gap: 10px;
-}
-
-.main-discover p {
-    font-family: var(--paragraphs-font);
-    font-size: 1.3em;
-}
-
-h4 {
-    text-align: center;
-    font-size: 1.6em;
-    font-family: var(--heading-font);
-}
-
-.gallery {
-    align-content: center;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 100%;
-    border: 1px solid #000;
-    margin-bottom: 20px;
-    place-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-}
-
-.gallery img {
-    width: 85%;
-    height: auto;
-    border-radius: 5px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    margin: 0 auto;
-    padding-top: 50px;
-}
-
-.gallery figure {
-    position: relative;
-    margin: 0;
-    overflow: hidden;
-}
-
-.gallery figcaption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 10px;
-    margin: 0;
-    font-family: var(--heading-font);
-    transition: opacity 0.3s ease;
-}
-
-picture {
-    padding: 0;
-    margin: 0 auto;
-}
-
-.space {
-    padding-bottom: 50px;
-}
-
-.card-1-1 img {
-    width: 80%;
-    height: auto;
-}
-
-.card-1-1 {
-    border-radius: 5px;
-    width: 80%;
-    max-width: 100%;
-    border: 1px solid #000;
-    place-items: center;
-    margin: 0 auto;
-    margin-bottom: 40px;
-}
-
-.card-1-1 h2 {
-    background-color: var(--secondary-color);
-    font-size: 1.5em;
-    font-family: var(--heading-font);
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    color: white;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 10px;
-    padding: 15px;
-
-}
-
-.hrv2 {
-    margin-top: -20px;
-    margin-bottom: 35px;
-}
-
-.calendar {
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 0 auto;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.days {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 5px;
-}
-
-.day {
-    padding: 5px;
-    border: 1px solid #eee;
-    text-align: center;
-}
-
-
-
-.here-link {
-    color: #000;
-    text-decoration: none;
-}
-
-.here-link:hover {
-    text-decoration: underline;
-    color: blue;
-}
-
-.dark-mode .here-link {
-    color: white;
-    text-decoration: none;
-}
-
-.dark-mode .here-link:hover {
-    text-decoration: underline;
-    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black;
-}
 
 
 
@@ -1041,8 +794,6 @@ h4 {
     text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black;
 }
 
-
-
 img {
     max-width: 100%;
 }
@@ -1058,15 +809,6 @@ figure img {
 }
 
 
-#forecast {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-#forecast {
-    text-align: center;
-}
 
 #forecast img {
     background-color: #6f52d6;
@@ -1074,13 +816,22 @@ figure img {
 }
 
 .second-header {
-    margin: 0 auto;
-    max-width: 75%;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-
+    text-align: center;
+    /* Center the header text */
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: var(--secondary-color);
+    font-size: 1.5em;
+    font-family: var(--heading-font);
+    border-radius: 5px 5px 0 0;
+    /* Apply border-radius to top corners only */
 }
 
+
+
+
+/*Highest temperature banner*/
 #space {
     position: sticky;
     background: linear-gradient(to bottom, rgb(211, 101, 38), rgb(223, 191, 49));
@@ -1121,7 +872,6 @@ figure img {
 .banner-button:hover {
     text-shadow: 0 0 5px white, 0 0 5px black, 0 0 5px white;
 }
-
 
 .banner {
 
