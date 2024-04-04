@@ -115,10 +115,24 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .three {
-        align-items: center;
-        grid-template-columns: repeat(4, 1fr);
+    .info {
+        justify-content: center;
     }
+
+    .two {
+        grid-column: 2/3;
+        grid-row: 1/6;
+    }
+
+    .middle-left {
+        grid-column: 1/2;
+    }
+
+    .down-left {
+        grid-column: 1/2;
+    }
+
+
 
     hr {
 

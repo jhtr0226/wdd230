@@ -31,23 +31,36 @@ async function displayVehicles() {
     vehicleSlideshow.innerHTML = '';
 
     let vehiclesToDisplay = vehicles;
-
-    if (window.innerWidth >= 768 && window.innerWidth < 1024) {
+    vehiclesToDisplay = shuffleArray(vehiclesToDisplay);
+    if (window.innerWidth >= 600 && window.innerWidth < 1200) {
+        vehiclesToDisplay = shuffleArray(vehiclesToDisplay);
         vehiclesToDisplay = vehicles.slice(0, 2);
+
     }
-    else if (window.innerWidth >= 1024) {
+    else if (window.innerWidth >= 1200) {
+        vehiclesToDisplay = shuffleArray(vehiclesToDisplay);
         vehiclesToDisplay = vehicles.slice(0, 3);
+
     }
     else {
-
+        vehiclesToDisplay = shuffleArray(vehiclesToDisplay);
         vehiclesToDisplay = vehicles.slice(0, 1);
     }
+    const shuffledVehicles = shuffleArray(vehiclesToDisplay);
 
-    vehiclesToDisplay.forEach(vehicle => {
+    shuffledVehicles.forEach(vehicle => {
         const vElement = vehicleElement(vehicle);
         vehicleSlideshow.appendChild(vElement);
     });
 }
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
 
 displayVehicles();
 

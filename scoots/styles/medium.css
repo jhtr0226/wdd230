@@ -95,11 +95,14 @@
         margin-bottom: 0px;
     }
 
-    .one,
-    .three {
+    .one {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .two {
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
 
     hr {
         grid-column: span 2;
