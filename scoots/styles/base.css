@@ -29,7 +29,10 @@ header>div {
     align-items: center;
 }
 
-#logo {
+
+
+#logo,
+#logo-footer {
     border-radius: 50px;
     margin: 0 auto;
     width: 50px;
@@ -189,6 +192,53 @@ footer p {
     color: rgb(0, 0, 0);
 }
 
+.footer-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contact-info p {
+    margin-top: -10px;
+}
+
+#logo-footer {
+    align-items: center;
+
+}
+
+.logo-section-footer {
+    margin-top: -10px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-section-footer h1,
+.logo-section-footer p {
+    color: #000;
+    margin: 0 auto;
+}
+
+.logo-section-footer h1 {
+    font-size: 1.5em;
+}
+
+.logo-section-footer p {
+    font-size: .9em;
+}
+
+
+
+
 
 /*------------GRIDS--------------*/
 .one {
@@ -199,14 +249,39 @@ footer p {
 }
 
 /*info*/
+
+.info p {
+    padding: 10px;
+}
+
+.info a {
+    color: black;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.info a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.dark-mode .info a {
+    color: white;
+
+}
+
+.dark-mode .info a:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color), 0 0 15px black;
+}
+
 .info {
     max-width: 70%;
-    margin: auto auto;
+    margin: auto 0;
     border: 1px solid black;
     border-radius: 5px;
     place-items: center;
     height: auto;
-    padding: 0;
 }
 
 .weather-condition {
@@ -241,7 +316,7 @@ footer p {
     border: 2px solid black;
     border-radius: 5px;
     width: 90%;
-    margin: auto auto;
+    margin: auto 15px;
 }
 
 .two h3 {

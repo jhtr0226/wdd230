@@ -141,13 +141,6 @@ function displayingForecast(data) {
             break;
         }
     }
-
-    if (!forecastAdded) {
-        const noForecastMessage = document.createElement('p');
-        noForecastMessage.textContent = "No forecast available for tomorrow.";
-        forecastDiv.appendChild(noForecastMessage);
-    }
-
 }
 
 

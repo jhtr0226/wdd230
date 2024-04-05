@@ -132,7 +132,10 @@
         grid-column: 1/2;
     }
 
-
+    #logo-footer {
+        align-items: center;
+        margin-top: -5px;
+    }
 
     hr {
 
