@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GuadaSells Chamber of Commerce</title>
-    <meta name="description" content="Commerce Website">
+    <title>Scoots - Home page</title>
+    <meta name="description" content="Motor scooter rental company">
     <meta name="author" content="Johann Tellez">
 
-    <meta property="og:title" content="GuadaSells Chamber of Commerce">
+    <meta property="og:title" content="Scoots - Motor scooter rental company - RENT Page">
     <meta property="og:type" content="website.">
-    <meta property="og:image"
-        content="https://3.bp.blogspot.com/-gGIWLLtAJOM/WqHSM1568UI/AAAAAAAAK3Q/VbLY1mnaxREGfy_XIO1-5f4bIaz5EngXwCLcBGAs/s1600/29026214_795234287327806_1172145456101195776_o.jpg">
-    <meta property="og:url" content="https://jhtr0226.github.io/wdd230/chamber/">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://jhtr0226.github.io/wdd230/scoots/">
 
 
     <link rel="stylesheet" href="styles/normalize.css">
@@ -23,17 +22,17 @@
 </head>
 
 <body>
+    <div id="space"></div>
+
     <header>
         <div class="logo-section">
             <a href="index.html"><img id="logo" src="images/logo.webp" alt="logo" loading="lazy"></a>
-            <div>
+            <div class="text-container">
                 <h1>Scoots</h1>
                 <p>Motor scooter rental company</p>
+
             </div>
-
         </div>
-
-
         <div class="social-header">
             <a href="facebook.com" target="_blank">
                 <img class="social-icon" src="images/facebook.webp" alt="fb-icon">
@@ -61,108 +60,66 @@
             <p><a href="contact.html">CONTACT US!</a></p>
         </nav>
     </div>
-
-
     <button id="my-button"></button>
-    <h4 id="message"></h4>
-    <h4 class="visits-counter">Visits: <span id="visitCount">0</span></h4>
     <main class="main-discover"> <!--this is a funny class name-->
 
         <hr class="hrv2">
 
-        <div class="information">
-
-            <section class="card-1-1">
-                <h2>About</h2>
-                <p>Guadalupe is a district<br> from Goicoechea<br> in San Jose, Costa Rica.<br>This big district is
-                    prepared to<br> bring you the best it can<br>offer you in services<br>such as banks, stores<br>and
-                    new houses<br>ready to be habited.<br>
-                    We welcome<br> you to our webiste where you<br>will be able to get yourself<br>a nice place
-                    to live in!</p>
-
-            </section>
-
-            <section class="card-1-1">
-                <h2>Sunsets are NICE!</h2>
-
-                <img src="images/view-small.webp" alt="views" loading="lazy" width="1000" height="500">
-
-                <p>Come get some nice<br>places to stay<br>on your vacations <a
-                        href="https://www.airbnb.com/ipis-de-goicoechea-costa-rica/stays" target="_blank"
-                        class="here-link">HERE!</a></p>
-            </section>
-
-
-            <div class="calendar">
-                <div class="header">
-                    <button id="prevMonthBtn">&lt;</button>
-                    <h2 id="currentMonth"></h2>
-                    <button id="nextMonthBtn">&gt;</button>
-                </div>
-                <div class="days"></div>
-            </div>
-
-        </div>
-
-
-
-        <div class="gallery">
-            <figure>
-                <picture>
-                    <source srcset="images/church-small.webp" media="(max-width: 1000px)">
-                    <img src="images/church-medium.webp" alt="church" loading="lazy" width="1000" height="500">
-                </picture>
-                <p>Visit historical buildings</p>
-            </figure>
-            <figure>
-                <picture>
-                    <source srcset="images/grass-small.webp" media="(max-width: 1000px)">
-                    <img src="images/grass-medium.webp" alt="grass" loading="lazy" width="1000" height="500">
-                </picture>
-                <p>Enjoy of nature too!</p>
-            </figure>
-            <figure>
-                <picture>
-                    <source srcset="images/holyday-small.webp" media="(max-width: 1000px)">
-                    <img src="images/holyday-medium.webp" alt="holyday" loading="lazy" width="1000" height="500">
-                </picture>
-                <p>Don't miss our holidays activities!</p>
-            </figure>
-            <figure>
-                <picture>
-                    <source srcset="images/kiosko-small.webp" media="(max-width: 1000px)">
-                    <img src="images/kiosko-medium.webp" alt="kiosko" loading="lazy" width="1000" height="500">
-                </picture>
-                <p>Get an ice cream in our kiosko!</p>
-            </figure>
-            <figure>
-                <picture>
-                    <source srcset="images/sale-small.webp" media="(max-width: 1000px)">
-                    <img src="images/sale-medium.webp" alt="kiosko" loading="lazy" width="1000" height="500">
-                </picture>
-                <p>You can buy a house!</p>
-            </figure>
-            <figure>
-                <picture class="space">
-                    <source srcset="images/park-small.webp" media="(max-width: 1000px)">
-                    <img src="images/park-medium.webp" alt="park" loading="lazy" width="1000" height="500">
-                </picture>
-                <p>Welcome to Guadalupe!</p>
-            </figure>
-
-        </div>
+        <h1>Rentals</h1>
+        <table id="rentalsTable">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Capacity</th>
+                    <th>Reservation (Half Day)</th>
+                    <th>Reservation (Full Day)</th>
+                    <th>Walk-In (Half Day)</th>
+                    <th>Walk-In (Full Day)</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
     </main>
 
     <footer>
-        <p></p>
+        <p>Scoots&copy; 2024</p>
+        <div class="footer-flex">
+            <div class="contact-info">
+                <p>Contact info:</p>
+                <p><a href="">Main Location</a></p>
+                <p>Tel: (+52)987 123-4567</p>
+                <p>Email: Scoots@cozumel.com</p>
+            </div>
+            <div class="logo-section-footer">
+                <a href="index.html"><img id="logo-footer" src="images/logo.webp" alt="logo" loading="lazy"></a>
 
-        <p id="lastModified"></p>
+                <h1>Scoots</h1>
+                <p>Motor scooter rental company</p>
+
+
+            </div>
+        </div>
+
+
+        <div class="social-footer">
+            <a href="facebook.com" target="_blank">
+                <img class="social-icon" src="images/facebook.webp" alt="fb-icon">
+            </a>
+            <a href="#x.com target=" _blank">
+                <img class="social-icon" src="images/twitter.webp" alt="twitter-icon">
+            </a>
+            <a href="instagram.com" target="_blank">
+                <img class="social-icon" src="images/instagram.webp" alt="instagram-icon">
+            </a>
+        </div>
 
 
     </footer>
 
     <script src="scripts/burgermenu.js"></script>
-    <script src="scripts/visit-counter.js"></script>
+    <script src="scripts/table.js"></script>
     <script src="scripts/calendar.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/dark-mode.js"></script>
