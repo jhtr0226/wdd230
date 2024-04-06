@@ -505,6 +505,21 @@ input:checked+.slider:before {
 
 /*------------Second page-------------*/
 
+.main-table {
+    max-width: 1000px;
+}
+
+#rentalsTable {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#rentalsTable img {
+    border-radius: 10%;
+    width: 400px;
+    height: auto;
+    justify-content: center;
+}
 
 
 
