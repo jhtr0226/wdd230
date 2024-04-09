@@ -506,13 +506,13 @@ input:checked+.slider:before {
 #rentalsTable {
     border-collapse: collapse;
     width: 100%;
-    max-width: auto;
     margin: 0 auto;
 }
 
 #rentalsTable img {
     border-radius: 10%;
     width: 200px;
+    height: auto;
     justify-content: center;
 }
 
