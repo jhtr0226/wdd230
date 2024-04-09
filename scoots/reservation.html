@@ -63,6 +63,7 @@
     <button id="my-button"></button>
 
     <main>
+        <div id="feedback"></div>
 
         <div class="agreement">
             <h2 class="letsgo">Let's get you a vehicle!</h2>
@@ -94,7 +95,7 @@
                     <label for="email">Email: <input type="email" name="email" id="email" required autocomplete="email">
                     </label>
 
-                    <label for="phone"> <input type="tel" name="phone" id="phone" pattern="[0-9]" required
+                    <label for="phone">Phone Number: <input type="tel" name="phone" id="phone" required
                             autocomplete="phone">
                     </label>
 
@@ -102,7 +103,7 @@
                             autocomplete="country">
                     </label>
 
-                    <label for="cruise">Cruise Line [Optional]: <input type="text" name="cruise" id="cruise">
+                    <label for="cruise">Cruise Line (Optional): <input type="text" name="cruise" id="cruise">
                     </label>
                 </fieldset>
                 <fieldset>
@@ -124,17 +125,27 @@
                             <option value="Jeep">Jeep</option>
                         </select></label>
 
-                    <label for="vehicle">Vehicle: <select name="vehicle" id="vehicle" required>
+                    <label for="vehicle">Vehicle: <select name="vehicle" id="vehicle">
                             <option value="#">Please Select</option>
                         </select></label>
 
                     <label for="number">Number of Rentals: <input type="number" id="number" name="number" min="1"
                             required>
                     </label>
+
+                    <label for="checkbox">
+                        <input type="checkbox" id="checkbox" name="checkbox" required>
+                        I accept the terms and conditions
+                    </label>
                 </fieldset>
-                <label for="notes">Additional Notes : <input type="text" name="notes" id="notes"></label>
-
-
+                <fieldset>
+                    <legend>Notes (Optional)</legend>
+                    <label for="notes">
+                        <textarea name="notes" id="notes" rows="4" cols="50"
+                            placeholder="Like if you need another kind of vehicle beside the selected one..."></textarea>
+                    </label>
+                </fieldset>
+                <button type="submit" class="get">Reserve!</button>
             </form>
         </div>
 
@@ -165,7 +176,7 @@
             <a href="facebook.com" target="_blank">
                 <img class="social-icon" src="images/facebook.webp" alt="fb-icon">
             </a>
-            <a href="#x.com target=" _blank">
+            <a href="#x.com" target="_blank">
                 <img class="social-icon" src="images/twitter.webp" alt="twitter-icon">
             </a>
             <a href="instagram.com" target="_blank">
@@ -178,6 +189,7 @@
 
     <script src="scripts/burgermenu.js"></script>
     <script src="scripts/vehicle-list.js"></script>
+    <script src="scripts/message.js"></script>
     <script src="scripts/dark-mode.js"></script>
 
 </body>

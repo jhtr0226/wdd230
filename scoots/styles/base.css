@@ -603,13 +603,121 @@ li {
 }
 
 
+.first-form {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.first-form label {
+    padding: 10px;
+    display: block;
+    font-size: 1em;
+    font-family: var(--paragraphs-font);
+
+}
+
+.first-form legend {
+    font-family: var(--heading-font);
+    font-size: 1.3em;
+    margin: 0 auto;
+}
+
+.first-form fieldset {
+    border-radius: 5px;
+    margin: 2rem auto;
+    width: 70%;
+
+}
+
+.first-form input[type="text"],
+.first-form input[type="tel"],
+.first-form input[type="email"],
+.first-form textarea {
+    display: block;
+    border: solid 1px black;
+    border-radius: 6px;
+    padding: .75rem;
+    width: 90%;
+    max-width: 400px;
+    appearance: none;
+    margin-bottom: 15px;
+    margin: 0 auto;
+}
+
+.dark-mode .first-form input[type="text"],
+.dark-mode .first-form input[type="tel"],
+.dark-mode .first-form input[type="email"],
+.dark-mode .first-form input[type="number"],
+.dark-mode .first-form input[type="date"],
+.dark-mode textarea {
+    background-color: black;
+    border: solid 1px white;
+    color: white;
+
+}
+
+.first-form button[type="submit"] {
+    display: block;
+    margin: 1rem auto;
+    border-radius: 6px;
+    padding: 1rem;
+    width: 70%;
+    max-width: 400px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.dark-mode .first-form button[type="submit"] {
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+}
+
+.first-form button[type="submit"]:hover {
+    background-color: #1c94c4;
+    color: white;
+}
+
+.dark-mode .first-form button[type="submit"]:hover {
+    background-color: #c45f30;
+}
+
+.first-form input:required,
+.dark-mode .first-form input:required,
+.first-form select:required,
+.first-form select:required {
+    border-left: solid 6px red;
+}
+
+.first-form input:required:valid,
+.dark-mode .first-form input:required:valid,
+.first-form select:required:valid,
+.dark-mode .first-form select:required:valid {
+    border-left: solid 6px green;
+}
+
+.dark-mode .first-form select {
+    background-color: black;
+    color: white;
+}
+
+#feedback {
+    padding: 10px;
+    display: none;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: #dd690ab9;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.dark-mode #feedback {
+    border: 1px solid white;
+}
 
 
-
-
-
-
-/*//////////////////*/
+/*/////////Last page/////////*/
 .locations {
     font-size: 2em;
     margin: 1.5em auto;
@@ -625,101 +733,6 @@ iframe {
 
 
 
-.the-form {
-    margin: 0 auto;
-    width: 100%;
-}
-
-.wf2 label {
-    padding: 10px;
-    display: block;
-    font-size: 1em;
-    font-family: var(--paragraphs-font);
-
-}
-
-.wf2 legend {
-    font-family: var(--heading-font);
-    font-size: 1.3em;
-    margin: 0 auto;
-}
-
-.wf2 fieldset {
-    border-radius: 5px;
-    margin: 2rem auto;
-    width: 70%;
-
-}
-
-.wf2 input[type="text"],
-.wf2 input[type="tel"],
-.wf2 input[type="email"],
-.wf2 textarea {
-    display: block;
-    border: solid 1px black;
-    border-radius: 6px;
-    padding: .75rem;
-    width: 90%;
-    max-width: 400px;
-    appearance: none;
-    margin-bottom: 15px;
-    margin: 0 auto;
-}
-
-.dark-mode .wf2 input[type="text"],
-.dark-mode .wf2 input[type="tel"],
-.dark-mode .wf2 input[type="email"],
-.dark-mode textarea {
-    background-color: black;
-    border: solid 1px white;
-    color: white;
-
-}
-
-.wf2 button[type="submit"] {
-    display: block;
-    margin: 1rem auto;
-    border-radius: 6px;
-    padding: 1rem;
-    width: 70%;
-    max-width: 400px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.dark-mode .wf2 button[type="submit"] {
-    background-color: black;
-    color: white;
-    border: solid 1px white;
-}
-
-.dark-mode .wf2 button[type="submit"]:hover {
-    background-color: #3081c4;
-}
-
-.wf2 input:required,
-.dark-mode .wf2 input:required {
-    border-left: solid 6px red;
-}
-
-.wf2 input:required:valid,
-.dark-mode .wf2 input:required:valid {
-    border-left: solid 6px green;
-}
-
-
-
-.dark-mode .wf2 select {
-    background-color: black;
-    color: white;
-}
-
-
-.record {
-    margin: 0 auto;
-    margin-bottom: 300px;
-    margin-top: 200px;
-}
 
 h4 {
     font-size: 2em;
@@ -732,6 +745,11 @@ h4 {
     text-shadow: 0 0 5px white, 0 0 5px black, 0 0 5px white;
 }
 
+.record {
+    margin: 0 auto;
+    margin-bottom: 300px;
+    margin-top: 200px;
+}
 
 .record p,
 .record a {
