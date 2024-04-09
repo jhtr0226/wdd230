@@ -505,8 +505,9 @@ input:checked+.slider:before {
 
 #rentalsTable {
     border-collapse: collapse;
-    width: 100%;
+    width: auto;
     margin: 0 auto;
+
 }
 
 #rentalsTable img {
@@ -519,7 +520,7 @@ input:checked+.slider:before {
 td {
     border: 1px solid black;
     margin: 0 auto;
-    padding: 5px;
+    padding: 0 0;
 }
 
 .dark-mode th,
@@ -553,20 +554,11 @@ thead th {
     background-color: black;
 }
 
-tbody th {
-    font-weight: 200;
-    border: 1px solid black;
-    font-size: small;
-    padding: 10px;
-
-}
-
 table p {
     text-align: center;
 }
 
 th {
-    font-weight: 200;
     font-size: small;
 }
 
