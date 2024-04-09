@@ -88,16 +88,18 @@
                 <fieldset>
                     <legend>Contact information</legend>
 
-                    <label for="name">Name: <input type="text" id="name" name="name" required>
+                    <label for="name">Name: <input type="text" id="name" name="name" required autocomplete="name">
                     </label>
 
-                    <label for="email">Email: <input type="email" name="email" id="email" required>
+                    <label for="email">Email: <input type="email" name="email" id="email" required autocomplete="email">
                     </label>
 
-                    <label for="Phone Number"> <input type="tel" name="phone" id="phone" pattern="[0-9] required">
+                    <label for="phone"> <input type="tel" name="phone" id="phone" pattern="[0-9]" required
+                            autocomplete="phone">
                     </label>
 
-                    <label for="country">Country: <input type="text" name="country" id="country" required>
+                    <label for="country">Country: <input type="text" name="country" id="country" required
+                            autocomplete="country">
                     </label>
 
                     <label for="cruise">Cruise Line [Optional]: <input type="text" name="cruise" id="cruise">
@@ -109,7 +111,7 @@
                     <label for="date">Date: <input type="date" name="date" id="date" required>
                     </label>
 
-                    <label for="perid">Period: <select id="period" name="period" required>
+                    <label for="period">Period: <select id="period" name="period" required>
                             <option value="">Please Select</option>
                             <option value="h-d">Half-Day</option>
                             <option value="f-d">Full-Day</option>
@@ -117,20 +119,20 @@
 
                     <label for="rental-type">Rental Type: <select name="rental-type" id="rental-type" required>
                             <option value="">Please Select</option>
-                            <option value="scooter">Scooter</option>
-                            <option value="atv">ATV</option>
-                            <option value="jeep">Jeep</option>
+                            <option value="Scooter">Scooter</option>
+                            <option value="ATV">ATV</option>
+                            <option value="Jeep">Jeep</option>
                         </select></label>
 
                     <label for="vehicle">Vehicle: <select name="vehicle" id="vehicle" required>
                             <option value="#">Please Select</option>
                         </select></label>
 
-                    <label for="amount">Number of Rentals: <input type="number" id="number" name="number" min="1"
+                    <label for="number">Number of Rentals: <input type="number" id="number" name="number" min="1"
                             required>
                     </label>
                 </fieldset>
-                <label for="notes">Additional Notes : </label>
+                <label for="notes">Additional Notes : <input type="text" name="notes" id="notes"></label>
 
 
             </form>

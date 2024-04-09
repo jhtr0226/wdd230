@@ -138,7 +138,7 @@ nav {
     text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px black;
 }
 
-/*
+
 footer {
     font-size: 1.2em;
     max-width: 100%;
@@ -165,9 +165,9 @@ footer p {
     color: white;
     text-align: center;
 
-}*/
+}
 
-.card {
+*/ .card {
     border-radius: 5px;
     width: 100%;
     max-width: 100%;
