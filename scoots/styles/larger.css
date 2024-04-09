@@ -139,7 +139,10 @@
         color: white;
     }
 
-
+    th {
+        font-weight: 200;
+        font-size: 1.5em;
+    }
 
     .middle-left {
         grid-column: 1/2;

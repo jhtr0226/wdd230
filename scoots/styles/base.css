@@ -504,21 +504,110 @@ input:checked+.slider:before {
 }
 
 /*------------Second page-------------*/
-
-.main-table {
-    max-width: 1000px;
+.the-rent {
+    font-family: var(--heading-font);
+    font-size: 2em;
+    text-align: center;
 }
 
 #rentalsTable {
-    margin: 0 auto;
+    border-collapse: collapse;
     width: 100%;
+    max-width: auto;
+    margin: 0 auto;
 }
 
 #rentalsTable img {
     border-radius: 10%;
-    width: 400px;
+    width: 200px;
     height: auto;
     justify-content: center;
+}
+
+td {
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.dark-mode th,
+.dark-mode td {
+    border: 1px solid white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.dark-mode tbody tr:nth-child(odd) {
+    background-color: black;
+}
+
+thead th {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+
+.dark-mode thead th {
+    background-color: black;
+    color: white;
+}
+
+
+.dark-mode thead th:not(:first-child):nth-last-child(-n+3) {
+    background-color: black;
+}
+
+tbody th {
+    font-weight: 200;
+    border: 1px solid black;
+    font-size: small;
+    padding: 10px;
+
+}
+
+table p {
+    text-align: center;
+}
+
+th {
+    font-weight: 200;
+    font-size: small;
+}
+
+
+/*reservation 3rd page*/
+.letsgo {
+    font-size: 2em;
+    font-family: var(--heading-font);
+
+}
+
+.TC {
+    text-align: center;
+    font-family: var(--heading-font);
+}
+
+li {
+    text-align: left;
+    margin: 15px auto;
+    font-size: 1em;
+    font-family: var(--paragraphs-font);
+}
+
+.termns {
+    border: 1px solid black;
+    border-radius: 25px;
+    margin: 0 auto;
+    width: 80%;
+    list-style: numeric;
+}
+
+.dark-mode .termns {
+    border: 1px solid white;
 }
 
 
@@ -526,7 +615,23 @@ input:checked+.slider:before {
 
 
 
-/*Chamber join part*/
+
+
+/*//////////////////*/
+.locations {
+    font-size: 2em;
+    margin: 1.5em auto;
+    font-family: var(--heading-font);
+}
+
+iframe {
+    border-radius: 25px;
+    border: 1px solid black;
+    margin: 10px auto;
+}
+
+
+
 
 .the-form {
     margin: 0 auto;
@@ -617,91 +722,6 @@ input:checked+.slider:before {
     color: white;
 }
 
-
-/*table*/
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-    max-width: 600px;
-    margin: 0;
-    margin-left: -10px;
-}
-
-td {
-    border: 1px solid black;
-    margin: 0 auto;
-    padding: 5px;
-}
-
-
-.dark-mode th,
-.dark-mode td {
-    border: 1px solid white;
-}
-
-caption {
-    font-weight: bold;
-    background-color: #f2f2f2;
-    color: black;
-    padding: 10px;
-    font-size: 1.2rem;
-    border: 1px solid black;
-}
-
-.dark-mode caption {
-    background-color: black;
-    color: white;
-    border: 1px solid white;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #f2f2f2;
-}
-
-.dark-mode tbody tr:nth-child(odd) {
-    background-color: black;
-}
-
-thead th {
-    background-color: white;
-    color: black;
-    padding: 5px;
-    border: 1px solid black;
-}
-
-
-.dark-mode thead th {
-    background-color: black;
-    color: white;
-}
-
-
-.dark-mode thead th:not(:first-child):nth-last-child(-n+3) {
-    background-color: black;
-}
-
-tbody th {
-    font-weight: 200;
-    border: 1px solid black;
-    font-size: small;
-    padding: 10px;
-
-}
-
-table p {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-}
-
-
-th {
-    font-weight: 200;
-    font-size: small;
-}
 
 .record {
     margin: 0 auto;

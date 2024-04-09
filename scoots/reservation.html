@@ -54,24 +54,89 @@
     </header>
     <div>
         <nav class="navigation">
-            <p><a href="#" class="active">Home</a></p>
+            <p><a href="index.html">Home</a></p>
             <p><a href="rentals.html">Rent</a></p>
-            <p><a href="reservation.html">Reserve</a></p>
+            <p><a href="#" class="active">Reserve</a></p>
             <p><a href="contact.html">CONTACT US!</a></p>
         </nav>
     </div>
     <button id="my-button"></button>
 
-    <main id="directory">
-        <h2 class="first-heading">Directory</h2>
-        <div class="menu1">
-            <button id="grid">⏹️ Grid</button>
-            <button id="list">☰ List</button>
+    <main>
+
+        <div class="agreement">
+            <h2 class="letsgo">Let's get you a vehicle!</h2>
+            <ul class=" termns">
+                <h2 class="TC">Termns & Conditions</h2>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul>
         </div>
-        <hr>
-        <article class="grid" id="card1">
-            <h2></h2>
-        </article>
+
+
+        <h2 class="letsgo">Reservation Form</h2>
+        <div class="flex-form">
+            <form class="first-form">
+                <fieldset>
+                    <legend>Contact information</legend>
+
+                    <label for="name">Name: <input type="text" id="name" name="name" required>
+                    </label>
+
+                    <label for="email">Email: <input type="email" name="email" id="email" required>
+                    </label>
+
+                    <label for="Phone Number"> <input type="tel" name="phone" id="phone" pattern="[0-9] required">
+                    </label>
+
+                    <label for="country">Country: <input type="text" name="country" id="country" required>
+                    </label>
+
+                    <label for="cruise">Cruise Line [Optional]: <input type="text" name="cruise" id="cruise">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Rental Information</legend>
+
+                    <label for="date">Date: <input type="date" name="date" id="date" required>
+                    </label>
+
+                    <label for="perid">Period: <select id="period" name="period" required>
+                            <option value="">Please Select</option>
+                            <option value="h-d">Half-Day</option>
+                            <option value="f-d">Full-Day</option>
+                        </select></label>
+
+                    <label for="rental-type">Rental Type: <select name="rental-type" id="rental-type" required>
+                            <option value="">Please Select</option>
+                            <option value="scooter">Scooter</option>
+                            <option value="atv">ATV</option>
+                            <option value="jeep">Jeep</option>
+                        </select></label>
+
+                    <label for="vehicle">Vehicle: <select name="vehicle" id="vehicle" required>
+
+                        </select></label>
+
+                    <label for="amount">Number of Rentals: <input type="number" id="number" name="number" min="1"
+                            required>
+                    </label>
+                </fieldset>
+                <label for="notes">Additional Notes : </label>
+
+
+            </form>
+        </div>
+
+
     </main>
 
     <footer>
@@ -110,7 +175,7 @@
     </footer>
 
     <script src="scripts/burgermenu.js"></script>
-    <script src="scripts/directory.js"></script>
+    <script src="scripts/vehicle-list.js"></script>
     <script src="scripts/dark-mode.js"></script>
 
 </body>
