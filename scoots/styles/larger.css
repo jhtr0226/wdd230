@@ -1,6 +1,7 @@
 @media screen and (min-width: 1201px) and (max-width: 4000px) {
 
-    .content-hero {
+    .content-hero,
+    .rent-here {
         width: 20%;
     }
 
@@ -189,6 +190,9 @@
         border-radius: 25px;
         margin: 0 auto;
         width: 80%;
+    }
+
+    ul {
         list-style: none;
     }
 

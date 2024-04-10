@@ -100,7 +100,8 @@
         font-size: 1.5em;
     }
 
-    .content-hero {
+    .content-hero,
+    .rent-here {
         width: 25%;
     }
 
