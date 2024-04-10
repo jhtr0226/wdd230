@@ -29,7 +29,13 @@ header>div {
     align-items: center;
 }
 
+footer a {
+    color: black;
+}
 
+footer a:hover {
+    color: blue;
+}
 
 #logo,
 #logo-footer {
@@ -438,30 +444,32 @@ input:checked+.slider:before {
 
 /*Hero*/
 
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hero img {
     width: 100%;
     height: auto;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    display: block;
 }
 
 .content-hero {
-    position: relative;
-    display: flex;
+    position: absolute;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: #bcbe0fd2;
-    color: white;
+    color: rgb(2, 0, 0);
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-family: var(--paragraphs-font);
     margin: 0 auto;
     width: 40%;
-    text-shadow: 0 0 5px white, 0 0 5px black, 0 0 5px white;
-    box-shadow: 5px -5px 10px white, -5px 5px 10px white;
 }
 
 .content-hero a {
@@ -470,6 +478,7 @@ input:checked+.slider:before {
     display: inline-block;
     position: relative;
     transition: 0.5s;
+    color: white;
 }
 
 .content-hero a:after {
@@ -506,7 +515,7 @@ input:checked+.slider:before {
 #rentalsTable {
     border-collapse: collapse;
     width: auto;
-    margin: 0 auto;
+    margin: 55px auto;
 
 }
 
@@ -514,7 +523,11 @@ input:checked+.slider:before {
     border-radius: 10%;
     width: 200px;
     height: auto;
-    justify-content: center;
+    padding-top: 10px;
+}
+
+#rentalsTable img:hover {
+    transform: scale(1.1);
 }
 
 td {

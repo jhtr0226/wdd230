@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoots - Home page</title>
+    <title>Scoots - Contact page</title>
     <meta name="description" content="Motor scooter rental company">
     <meta name="author" content="Johann Tellez">
 
-    <meta property="og:title" content="Scoots - Motor scooter rental company - Home Page">
+    <meta property="og:title" content="Scoots - Motor scooter rental company - Contact Page">
     <meta property="og:type" content="website.">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="https://jhtr0226.github.io/wdd230/scoots/">
+    <meta property="og:image"
+        content="https://c1.wallpaperflare.com/preview/628/343/705/motorcycle-tires-fire-burning-burning-tires.jpg">
+    <meta property="og:url" content="https://jhtr0226.github.io/wdd230/scoots/contact.html">
 
 
     <link rel="stylesheet" href="styles/normalize.css">
@@ -22,7 +23,6 @@
 </head>
 
 <body>
-    <div id="space"></div>
 
     <header>
         <div class="logo-section">
@@ -64,6 +64,12 @@
 
     <main class="main-discover">
 
+        <div>
+            <h2 class="locations">Contact Information</h2>
+            <p>Phone</p>
+            <p>Email</p>
+            <p></p>
+        </div>
 
         <div class="maps">
             <h2 class="locations">Locations</h2>
@@ -78,43 +84,26 @@
             </iframe>
         </div>
 
-        <h2>Contact Us</h2>
+
 
         <hr class="hrv2">
 
-        <div class="the-form">
-            <form method="get" action="thankyou.html" class="wf2">
+        <div id="flex-form">
+            <h2 class="locations">Contact Us Form</h2>
+            <form class="first-form" action="thankyou.html">
                 <fieldset>
-                    <legend>Personal Information</legend>
-                    <label>First Name*<input type="text" name="fname" id="fname" required></label>
-                    <label>Last Name*<input type="text" name="lname" id="lname" required></label>
-                    <label>Email<input type="email" placeholder="example@gmail.com" name="email" id="email"></label>
-                    <label>Phone Number*<input type="tel" placeholder="1234567890" name="phone" id="phone"
-                            required></label>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
 
-                </fieldset>
-                <fieldset>
-                    <legend>Business Information</legend>
-                    <label>Business Name<input type="text" name="bn" id="bn" required></label>
-                    <label>My Position in the Business <input type="text" name="title" id="title"
-                            pattern="[a-zA-Z\-]{7,}" placeholder="Marketing Manager"></label>
-                    <label>Business Description<textarea name="bd" id="bd" rows="5"
-                            placeholder="Your business description goes here!"></textarea></label>
-                </fieldset>
-                <fieldset>
-                    <legend>Membership Level</legend>
-                    <label for="membership">Membership Level:</label>
-                    <select id="membership" name="membership" required>
-                        <option value="">Please Select</option>
-                        <option value="Bronze">Bronze Membership</option>
-                        <option value="Gold">Gold Membership</option>
-                        <option value="NP">Non Profit</option>
-                        <option value="Silver">Silver Membership</option>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
 
-                    </select>
+                    <label for="comment">Comment:</label><br>
+                    <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Your question comes here!"
+                        required></textarea><br><br>
                 </fieldset>
                 <input type="hidden" id="submission_time" name="submission_time">
-                <button type="submit">Join Now</button>
+                <button type="submit">Contact Us</button>
             </form>
         </div>
 
@@ -127,7 +116,9 @@
         <div class="footer-flex">
             <div class="contact-info">
                 <p>Contact info:</p>
-                <p><a href="">Main Location</a></p>
+                <p><a
+                        href="https://www.google.com/maps?ll=20.511767,-86.949251&z=19&t=m&hl=en&gl=CR&mapclient=embed&q=20%C2%B030%2742.3%22N+86%C2%B056%2756.8%22W+20.511750,+-86.949111@20.51175,-86.9491111">Main
+                        Location</a></p>
                 <p>Tel: (+52)987 123-4567</p>
                 <p>Email: Scoots@cozumel.com</p>
             </div>
