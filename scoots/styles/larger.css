@@ -41,9 +41,34 @@
 
     }
 
+    .contact-main {
+        max-width: 80%;
+        grid-column: span 2;
+    }
+
+    #flex-form {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .maps {
+        grid-column: 2/3;
+        width: 90%;
+    }
+
+    .the-contacts {
+        grid-column: 1/3;
+        justify-content: center;
+        width: 90%;
+    }
+
     .hHeader,
     .pHeader {
         margin-left: 45px;
+    }
+
+    .hrv2 {
+        display: none;
     }
 
     header p {
