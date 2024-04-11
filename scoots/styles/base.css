@@ -240,6 +240,7 @@ footer p {
 
 .logo-section-footer p {
     font-size: .9em;
+    font-family: var(--paragraphs-font);
 }
 
 
@@ -258,6 +259,7 @@ footer p {
 
 .info p {
     padding: 10px;
+    font-family: var(--paragraphs-font);
 }
 
 .info a {
@@ -568,6 +570,7 @@ thead th {
 
 table p {
     text-align: center;
+    font-family: var(--paragraphs-font);
 }
 
 th {
@@ -959,4 +962,11 @@ figure img {
 .rent-here:hover a:after {
     opacity: 1;
     right: 0;
+}
+
+
+.info:hover,
+.weather-condition:hover,
+iframe:hover {
+    transform: scale(1.1);
 }
